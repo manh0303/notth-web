@@ -28,3 +28,5 @@ Gate 1 APPROVED 2026-10-15; docs/product/gate-1-approval.md records owner sign-o
 CLI source/offline invocation: node /path/to/reviewed/notth/bin/aih.js. Registry E404 observed. Use pinned source SHA in evidence, not a guessed npm version. Core tests cover instructions only, never substitute for site tests.
 
 Loaded Product PRD/SRS/stories/AC/traceability/document-review skills; BA/PM/PO role contracts in one host. Independent QA NOT_RUN. Recovery in docs/evidence/harness-evaluation.md.
+
+Current design scope v0.2: headline typing + future setup-video placeholder + five workflow names only; see DEC-008 and docs/design/preview-review.md. Installation/docs external; no menu/clipboard. Current evidence docs/evidence/minimal, earlier preview evidence historical. Gate 2 remains pending.

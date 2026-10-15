@@ -22,3 +22,7 @@ Gate 1 decision update: owner said “oke đã merge gate 1”; PR #1 merge conf
 ## DEC-007 — Browser design review (owner confirmed)
 
 2026-10-15: Owner temporarily defers Figma/Penpot and authorizes Astro browser preview ("Oke triển đi"). This changes the Gate 2 review medium only. Editable external design deliverables are deferred, not completed. Gate 2 approval, owner UAT and release approval remain pending. See ../design/preview-review.md.
+
+## DEC-008 — Minimal homepage (owner-directed)
+
+2026-10-15: Owner requests extreme simplification: move logo typing to the headline, reserve former logo box for future short setup GIF/video, and retain only the five workflow stages below. Removes feature/tool/installation/extra CTA sections from the design scope. FR-002 becomes stage names; FR-003 links official setup docs rather than embedding steps. Reduced/no-JS headline stays static “nothing unnecessary.”. Future recording is deferred. This authorizes the revision, not Gate 2 acceptance or release. See ../design/preview-review.md v0.2.

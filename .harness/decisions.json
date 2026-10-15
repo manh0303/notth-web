@@ -45,6 +45,15 @@
       "answer": "Owner temporarily deferred Figma/Penpot and authorized an Astro browser prototype for Gate 2. Editable external designs are deferred. Gate 2, Gate 3, merge and release still require approval.",
       "reason": "Owner: T\u1ea1m b\u1ecf qua figma \u0111c ko, then Oke tri\u1ec3n \u0111i after browser-preview proposal.",
       "source": "docs/design/preview-review.md"
+    },
+    {
+      "id": "minimal-homepage-v02",
+      "scope": "project",
+      "status": "confirmed",
+      "question": "What should remain in the revised design?",
+      "answer": "Owner requests headline typing animation, future setup-media placeholder and only the five workflow stage names below. Install becomes official docs link; reduced/no-JS headline is static final tagline. Gate 2 approval pending.",
+      "reason": "Explicit owner feedback on the v0.1 preview.",
+      "source": "docs/product/decision-log.md DEC-008"
     }
   ]
 }

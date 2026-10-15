@@ -64,3 +64,7 @@ Evaluation: Harness gave useful role/requirement/approval/recovery contracts. CL
 Next executable step: owner reviews docs/design/notth-preview.html and preview-review.md for Gate 2. On approval, complete production hardening, full QA, UAT, CI and specifically approved deployment. Current state: prototype prepared, not merged, not released, owner acceptance pending.
 
 Final validation note: adding tests exposed missing Node typings and mixed Playwright-core types after recovery. Added pinned @types/node and a Playwright-core 1.51.1 override; final type check reports 0 errors/warnings/hints.
+
+## Minimal revision checkpoint — DEC-008
+
+Owner requested an extreme simplification. Reused Header/Wordmark/BrandMotion and Astro layout; moved animation into h1, replaced logo box with explicit future video placeholder, removed Install/clipboard/menu and unused CSS, retained five workflow labels. Updated current design/architecture/AC/traceability with scope delta rather than silently claiming the old requirements still apply. No new dependency. Current actual evidence: minimal/README.md (9/9 browser tests, typecheck/build). Gate 2 remains pending; PR #2 is the review destination. Next: owner reviews minimal prototype. No merge/deployment/release.

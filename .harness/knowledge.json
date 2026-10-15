@@ -3,21 +3,22 @@
   "context_hashes": {
     ".harness/agents.json": "2a4af46ee8d252315dd09905688857c9e191b13cf4d91c39afca67dd707912fd",
     ".harness/artifacts.json": "63fc3f5facb4e931a54d46e6c6c604208ac069bab5e96b85fa7172490ac85c71",
-    ".harness/decisions.json": "ffe1963ea5fe02eb498963c53abd9137dea58fa1e41cc00de81a4e98c7669310",
+    ".harness/decisions.json": "38098f64c828cb79e11765f86ff17586e0642f965ea2760c3d0adc9d74f7260f",
     ".harness/environment.json": "d14d43fb6036b6e3f78c72fdc2eb877318e4e6e59059fcf184f7b4a7806004fd",
     ".harness/integrations.json": "a61fda8e3afccd8946da825ead3fa8dd71084c9c648b195db3205f674a817a17",
-    ".harness/local.md": "76163f34fe5db9d234c677fb10cf828b1467ca2b3b2e67010bbe9fc6924d7e69"
+    ".harness/local.md": "8367ce33d20fd219e16cb9f22e14c43224b0d6545d0cf74c4f3ff09ab7ddf47b"
   },
-  "knowledge_hash": "f63ae61455336082c7af7e3a531f1b4e086d4e90ed7a5e3fb729ce85e9254782",
+  "knowledge_hash": "499476f30a4ea8bb9f39135444b1e8ef5d946dc7305ec567ab5951b2185442a9",
   "schema_version": 1,
   "source_hashes": {
     "AGENTS.md": "874a3030498500f499b5908089e227dd3e4230b339b3395e9fa45f8c20071941",
-    "README.md": "0611af9f657e99bc76be987fa921b7014332eff9e593f464ce5f13b7dc98bbbe",
-    "docs/evidence/preview/README.md": "b6ef34234739bfb2702c3963b32928a0c8b06011fcd4996bf9f1ec6344213eb1",
+    "README.md": "cac1040deeae55487e2ab9c9c20fa80ac653b1af3aebb8e0338d0ea1edc005a5",
+    "docs/evidence/minimal/README.md": "ab66de279bc44560e2cfc77b28f0ac45326f1be7f427abbf66484f99b186ff5e",
+    "docs/evidence/preview/README.md": "17c9313cfc57c03582a48ea16d8a3571671322afccc0ef6482e56a12f9ae50ea",
     "docs/product/README.md": "c29bd75e18a3135148139d8f3436aa49f6dacb0265acca405a7ef40b53511d89",
-    "docs/product/decision-log.md": "cf1bc57009b9bde1cf64b37f4684c485edb348726a9e50669294e2a0fd8eaef5",
+    "docs/product/decision-log.md": "a9220e481977e949df376f3f4ab1efaebfadeec3ba119711d5f2d2c29e510242",
     "docs/product/source-register.md": "fd9cd6b6b948625414a9e3d4839994400a6832ebd5f8536e8b97080a7f9e0a78",
     "docs/product/srs.md": "88499869996e90725c859d262781a5671fe491791e70a52aa97dc8e6da05dd4a",
-    "package.json": "0d2bb4363532d485feabee04d5aa6247fd1e369afa810b86a9e9374f8e965fdb"
+    "package.json": "95671f08ca219e795f9fbd0e52b5864eb39339bfc2f240871fc5f419124e4778"
   }
 }

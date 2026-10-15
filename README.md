@@ -14,7 +14,7 @@ No application scaffold/build/deployment exists yet. Requirements approved. Reso
 
 ## Gate 2 browser prototype
 
-Owner approved temporarily deferring Figma/Penpot. [Review the proposal](docs/design/preview-review.md) and download [the self-contained HTML preview](docs/design/notth-preview.html) to open in a browser. Desktop/tablet/mobile screenshots and actual check results are in [preview evidence](docs/evidence/preview/README.md).
+Owner approved temporarily deferring Figma/Penpot. [Review the proposal](docs/design/preview-review.md) and download [the self-contained HTML preview](docs/design/notth-preview.html) to open in a browser. Current minimal v0.2 keeps only the animated headline, future setup-media frame and five workflow stages. [Current screenshots and checks](docs/evidence/minimal/README.md); previous preview evidence is historical.
 
 ```sh
 npm ci

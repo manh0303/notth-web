@@ -1,23 +1,11 @@
-# Design handoff status
+# Minimal design handoff v0.2
 
-Gate 1: APPROVED by owner 2026-10-15; see ../product/gate-1-approval.md. Requirements v0.1 at main 28845004beed126eb72d4bbbd70c94b2835c39fa are the accepted input.
+Gate 2 pending. Owner requested the simpler composition documented in preview-review.md.
 
-Gate 2: NOT_READY — Figma authoring quota-blocked. No UI/frame approval requested. Gate 3: NOT_STARTED. No production code, merge or release/deployment action performed.
+Editable source: src/pages/index.astro, src/components/{Header,Wordmark,BrandMotion}.astro, src/styles/global.css. Run npm ci, npm run dev. Build and export: npm run build, node scripts/export-preview.mjs. Portable review artifact: notth-preview.html.
 
-File: https://www.figma.com/design/eAPVui9EUPPdsQCdpfICEJ . Verified current page 0:1; no UI frames, tokens/components or prototypes created. Inspect before retrying once quota is restored.
+The media frame is only a future setup-video placeholder. Add a real reviewed recording later with a poster, dimensions, accessible controls/captions as relevant and reduced-motion behavior; do not invent a recording. Installation is currently an official documentation link. Removed Install component and all unused CSS/clipboard/menu logic.
 
-Prepared proposals: screen-specification.md, foundations.md, motion-specification.md. Blocker/evidence: figma-blocker.md, figma-state.json and ../evidence/figma-quota.json. Palette contrast report is math only, not design/runtime accessibility proof.
+Requirement changes: FR-002 stage names only; FR-003 external setup guide; FR-005 animation now in h1, reduced/no-JS tagline is static “nothing”. See product decision log and traceability. Current executed checks: ../evidence/minimal/README.md. Prior v0.1 evidence is historical.
 
-| Planned screen | Requirements | Actual Figma node | Component / test |
-| --- | --- | --- | --- |
-| SCR-001 desktop 1440 | FR-001–005, NFR-001/002/004 | BLOCKED | pending / NOT_RUN |
-| SCR-002 tablet 768 | FR-001–005, NFR-001/002/004 | BLOCKED | pending / NOT_RUN |
-| SCR-003 mobile 375 | FR-001–005, NFR-001/002/004 | BLOCKED | pending / NOT_RUN |
-| SCR-004 mobile menu open | FR-004, NFR-001/002 | BLOCKED | pending / NOT_RUN |
-| SCR-005 reduced motion | FR-005, NFR-002 | BLOCKED | pending / NOT_RUN |
-
-Design skeleton/motion authoring scripts must be treated as unexecuted proposals until actual connected tool execution returns IDs. Code Connect is deferred until actual production Astro component paths exist; no fabricated map.
-
-## Current handoff — browser prototype
-
-Owner authorized temporarily deferring Figma/Penpot. See preview-review.md, ../architecture/technical-design.md, and ../../src for editable Astro/CSS. External design is not complete. The prototype is awaiting Gate 2 approval.
+No editable Figma/Penpot output, owner design approval, production acceptance, merge or deployment is claimed.

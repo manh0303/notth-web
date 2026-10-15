@@ -1,28 +1,26 @@
 ---
 import Base from '../layouts/Base.astro';
 import Header from '../components/Header.astro';
-import Wordmark from '../components/Wordmark.astro';
 import BrandMotion from '../components/BrandMotion.astro';
-import Install from '../components/Install.astro';
-const features = [
-  ['01', 'A workflow. Not more guesswork.', 'Go from an idea or change request to requirements, design, code, tests and review. Load only the roles and skills the task needs.', 'WORKFLOWS WITH INTENT', ['Requirements', 'Decisions', 'Evidence']],
-  ['02', 'Your stack stays yours.', 'Core workflows work across projects. Optional adapters bring stack-specific guidance without choosing your infrastructure or architecture for you.', 'SUPPORT, WITHOUT THE BAGGAGE', ['Astro', 'React / Next.js', 'Python', 'Spring Boot']],
-  ['03', 'Context that stays with the work.', 'Keep project decisions, specs and verification evidence in your repository. Resume from saved context and review what actually changed.', 'PROJECT-OWNED CONTEXT', ['.agents/', '.harness/', 'Your repository']],
-];
-const steps = [ ['Requirements', 'Clarify the intent.\nAgree on the scope.'], ['Design', 'Resolve the choices.\nMake the plan explicit.'], ['Code', 'Implement the\naccepted scope.'], ['Test', 'Run actual checks.\nKeep the evidence.'], ['Review', 'Inspect the result.\nYou decide what ships.'] ];
+const steps = ['Requirements', 'Design', 'Code', 'Test', 'Review'];
 ---
 <Base>
   <Header />
-  <main id="main">
-    <section class="hero wrap" aria-labelledby="hero-title">
-      <div class="hero-copy"><p class="eyebrow"><span class="status-dot" /> THE SOFTWARE DEVELOPMENT HARNESS</p><h1 id="hero-title">Nothing<br /><span>unnecessary.</span></h1><p class="hero-description">Reusable workflows for building software<br class="desktop-break" /> with your AI coding tool.</p><div class="hero-actions"><a href="#install" class="button primary">Get started <span aria-hidden="true">↗</span></a><a href="https://github.com/manh0303/notth" class="button secondary">Explore on GitHub <span aria-hidden="true">↗</span></a></div><p class="hero-note mono">OPEN SOURCE <span> / </span> YOUR TOOLS <span> / </span> YOUR CONTROL</p></div>
-      <BrandMotion />
+  <main id="main" class="wrap">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title" aria-label="Nothing unnecessary."><BrandMotion /><span class="headline-end" aria-hidden="true">unnecessary.</span></h1>
+        <p class="hero-description">A clearer workflow for your AI coding tool.</p>
+        <a class="button" href="https://github.com/manh0303/notth/blob/main/docs/getting-started.md">Get started <span aria-hidden="true">↗</span></a>
+      </div>
+      <figure class="setup-preview" aria-label="Setup walkthrough video placeholder. Video coming soon.">
+        <div class="video-space" aria-hidden="true"><svg viewBox="0 0 48 48" width="48" height="48" fill="none"><path d="M19 14.5L34 24 19 33.5V14.5Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" /></svg></div>
+        <figcaption><span>Setup walkthrough</span><span>Coming soon</span></figcaption>
+      </figure>
     </section>
-    <div class="compatibility wrap"><p>Built for the way<br />you already work.</p><div class="tool-list"><span>Codex</span><span>Claude Code</span><span>Cursor</span><span>GitHub Copilot</span><a href="https://github.com/manh0303/notth#where-it-runs">All supported tools <span aria-hidden="true">↗</span></a></div></div>
-    <section class="section wrap" id="features" aria-labelledby="features-title"><div class="section-heading"><p class="eyebrow">01 / THE ESSENTIALS</p><h2 id="features-title">A clear path.<br /><span>Less noise along the way.</span></h2></div><div class="feature-list">{features.map(([number,title,description,label,tags]) => <article class="feature-row"><span class="feature-number mono">{number}</span><div><h3>{title}</h3><p>{description}</p></div><div class="feature-detail"><span class="mono">{label}</span><div class="tags">{(tags as string[]).map(tag => <span>{tag}</span>)}</div></div></article>)}</div></section>
-    <section class="workflow-section" id="workflow" aria-labelledby="workflow-title"><div class="wrap"><div class="workflow-heading"><div><p class="eyebrow">02 / FROM INTENT TO EVIDENCE</p><h2 id="workflow-title">One considered step<br />at a time.</h2></div><p>Bring an idea, existing docs or a change request.<br />NOTTH helps your agent work through what comes next.</p></div><ol class="workflow-steps">{steps.map(([name,description],i) => <li><div class="step-line"><span class="step-number mono">0{i+1}</span><span aria-hidden="true">→</span></div><h3>{name}</h3><p>{description}</p></li>)}</ol><div class="workflow-footnote"><span class="small-cross" aria-hidden="true">+</span><p>The harness guides the workflow. Your AI tool runs the work.<br class="mobile-break" /> You keep the decisions.</p><a href="https://github.com/manh0303/notth/blob/main/docs/reusable-workflows.md">Explore the workflow <span aria-hidden="true">↗</span></a></div></div></section>
-    <Install />
-    <section class="docs-section wrap" aria-labelledby="docs-title"><p class="eyebrow">KEEP EXPLORING</p><h2 id="docs-title">Go deeper.<br /><span>Keep it simple.</span></h2><a class="button primary" href="https://github.com/manh0303/notth/tree/main/docs">Read the documentation <span aria-hidden="true">↗</span></a><div class="docs-decoration" aria-hidden="true">[ n. ]</div></section>
+    <section class="workflow" id="workflow" aria-label="Software development workflow">
+      <ol class="workflow-steps">{steps.map((step, i) => <li><span class="step-number" aria-hidden="true">0{i + 1}</span><span class="step-name">{step}</span><span class="step-arrow" aria-hidden="true">→</span></li>)}</ol>
+    </section>
   </main>
-  <footer class="site-footer wrap"><div><Wordmark /><p>Nothing unnecessary.</p></div><nav aria-label="Footer"><a href="https://github.com/manh0303/notth">GitHub ↗</a><a href="https://github.com/manh0303/notth/tree/main/docs">Documentation ↗</a><a href="https://github.com/manh0303/notth/blob/main/LICENSE">MIT License ↗</a></nav><p class="footer-note mono">BUILT WITH INTENT.</p></footer>
+  <footer class="site-footer wrap"><p>NOTTH — Nothing unnecessary.</p><a href="https://github.com/manh0303/notth/blob/main/LICENSE">MIT License ↗</a></footer>
 </Base>
