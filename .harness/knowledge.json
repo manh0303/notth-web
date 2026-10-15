@@ -1,0 +1,21 @@
+{
+  "bundle_sha256": "05e72e255e593d24f663425dd04541fb8dd1b57d1f7b6968939be25b79c07bcc",
+  "context_hashes": {
+    ".harness/agents.json": "2a4af46ee8d252315dd09905688857c9e191b13cf4d91c39afca67dd707912fd",
+    ".harness/artifacts.json": "e6aa7dfb874bb141c02d1669291161fae372ef73cbad85307744982b216fe0e5",
+    ".harness/decisions.json": "26dc9d6a8b8ea6a03b4806a6fa0f88c4c36c814ca6be938f0f89cdbb159c055f",
+    ".harness/environment.json": "d14d43fb6036b6e3f78c72fdc2eb877318e4e6e59059fcf184f7b4a7806004fd",
+    ".harness/integrations.json": "a61fda8e3afccd8946da825ead3fa8dd71084c9c648b195db3205f674a817a17",
+    ".harness/local.md": "4af576b39dcf73fbf3086159fbfdb75425cc793a3c0e5308d12b8415eee77e51"
+  },
+  "knowledge_hash": "d4de9fda7184cecd59d598ceeb846e21efa92b5c951036e4f0b8e76a913530f2",
+  "schema_version": 1,
+  "source_hashes": {
+    "AGENTS.md": "874a3030498500f499b5908089e227dd3e4230b339b3395e9fa45f8c20071941",
+    "README.md": "109a0bc236c5c4f695b917df34299ba874e48c9a7f095539f5cca40a909ca1f5",
+    "docs/product/README.md": "bb203126615f116c2a4786de86ef9e491656ab90d99014e52c65383754b420eb",
+    "docs/product/decision-log.md": "cc95b2c62d3962a9c8b36e0d23dfd1dcbcb35afacc8ca59817ea5a1f25791a07",
+    "docs/product/source-register.md": "fd9cd6b6b948625414a9e3d4839994400a6832ebd5f8536e8b97080a7f9e0a78",
+    "docs/product/srs.md": "88499869996e90725c859d262781a5671fe491791e70a52aa97dc8e6da05dd4a"
+  }
+}

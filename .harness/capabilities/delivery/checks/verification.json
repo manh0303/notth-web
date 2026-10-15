@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "checks": [
+    {
+      "id": "plan-evidence",
+      "title": "Review delivery plan authority",
+      "command": [],
+      "when_file": null,
+      "evidence": [
+        "Value slices and requirement/ADR/OpenSpec links",
+        "Dependency owners and estimate/capacity source or unknown",
+        "Actual completion evidence, risks and release/rollback handoff"
+      ],
+      "execution": "manual"
+    },
+    {
+      "id": "scope-change",
+      "title": "Review changed scope and commitments",
+      "command": [],
+      "when_file": null,
+      "evidence": [
+        "Baseline/delta and actual owner decision",
+        "Product/architecture/release impact",
+        "No invented schedule, progress or stakeholder messaging"
+      ],
+      "execution": "manual"
+    },
+    {
+      "id": "continuous-maintenance",
+      "title": "Continuous change review",
+      "command": [],
+      "when_file": null,
+      "evidence": [
+        "Actual progress/dependency/risk evidence and remaining work",
+        "Implementation complete, merged and released separate; no invented dates"
+      ],
+      "execution": "manual"
+    }
+  ]
+}

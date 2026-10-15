@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "product",
+  "description": "Evidence-based product documentation for developer ideas and existing BA sources, from discovery/research through BRD, PRD, SRS and OpenSpec handoff.",
+  "skills": [
+    "harness-product-knowledge-analysis",
+    "harness-product-business-analysis",
+    "harness-product-brd-generation",
+    "harness-product-prd-generation",
+    "harness-product-user-stories",
+    "harness-product-acceptance-criteria",
+    "harness-product-backlog-prioritization",
+    "harness-product-traceability",
+    "harness-product-document-review",
+    "harness-product-idea-discovery",
+    "harness-product-product-research",
+    "harness-product-srs-generation",
+    "harness-product-use-case-generation",
+    "harness-product-mvp-definition",
+    "harness-product-product-outcomes",
+    "harness-product-techspec"
+  ],
+  "workflows": [
+    "workflows/idea-to-prd.md",
+    "workflows/confluence-to-spec.md",
+    "workflows/change-impact-analysis.md",
+    "workflows/idea-driven.md",
+    "workflows/document-driven.md",
+    "workflows/product-to-solution.md",
+    "workflows/techspec-maintenance.md"
+  ],
+  "agents": [
+    "agents/business-analyst.md",
+    "agents/product-manager.md",
+    "agents/product-owner.md",
+    "agents/project-manager.md",
+    "agents/requirements-reviewer.md"
+  ],
+  "templates": [
+    "templates/source-register.md",
+    "templates/product-brief.md",
+    "templates/brd.md",
+    "templates/business-rules.md",
+    "templates/prd.md",
+    "templates/backlog.md",
+    "templates/acceptance-criteria.md",
+    "templates/traceability.md",
+    "templates/review-report.md",
+    "templates/decision-log.md",
+    "templates/delivery-plan.md",
+    "templates/idea.md",
+    "templates/research.md",
+    "templates/prd-lite.md",
+    "templates/srs.md",
+    "templates/use-cases.md",
+    "templates/mvp.md",
+    "templates/outcomes.md",
+    "templates/techspec.md"
+  ],
+  "module_version": "1.8.0",
+  "verification": "checks/verification.json",
+  "evaluation": "evals/cases.json",
+  "template_aliases": {
+    "templates/delivery-plan.md": "templates/delivery-plan.md"
+  },
+  "agent_aliases": {
+    "agents/project-manager.md": "core/agents/project-manager.md"
+  }
+}

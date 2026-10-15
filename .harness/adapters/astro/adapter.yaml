@@ -1,0 +1,29 @@
+{
+  "schema_version": 2,
+  "id": "astro",
+  "description": "Astro framework support following approved project architecture and hosting decisions.",
+  "detection": [
+    {
+      "file": "package.json",
+      "kind": "dependencies",
+      "values": [
+        "astro"
+      ]
+    }
+  ],
+  "rules": [
+    "rules/architecture.md",
+    "rules/security.md",
+    "rules/performance.md",
+    "rules/deployment.md"
+  ],
+  "skills": [
+    "harness-astro-project-architecture",
+    "harness-astro-islands",
+    "harness-astro-seo",
+    "harness-astro-performance"
+  ],
+  "verification": "checks/verification.yaml",
+  "evaluation": "evals/cases.json",
+  "module_version": "1.1.0"
+}

@@ -1,0 +1,12 @@
+{
+  "adapters": [
+    "astro"
+  ],
+  "capabilities": [
+    "uiux",
+    "product",
+    "architecture",
+    "delivery"
+  ],
+  "schema_version": 1
+}

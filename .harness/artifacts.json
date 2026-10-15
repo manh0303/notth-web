@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "mode": "idea-driven",
+  "inputs": {
+    "framework": {
+      "kind": "source",
+      "location": {
+        "url": "https://github.com/manh0303/notth"
+      },
+      "revision": "11d662c9064cc989373e36b8c546cfb323a9b023",
+      "write_policy": "read-only"
+    }
+  },
+  "outputs": {
+    "product": {
+      "kind": "docs",
+      "location": {
+        "path": "docs/product"
+      },
+      "capability": "product",
+      "canonical": true,
+      "status": "draft",
+      "owner": "project-owner",
+      "sources": [
+        "framework"
+      ]
+    },
+    "ui": {
+      "kind": "design",
+      "location": {
+        "url": "https://www.figma.com/design/eAPVui9EUPPdsQCdpfICEJ",
+        "connection": "figma"
+      },
+      "revision": "page-0:1-gate1-pending",
+      "canonical": true,
+      "status": "draft",
+      "write_policy": "write",
+      "owner": "project-owner",
+      "sources": [
+        "framework"
+      ],
+      "depends_on": [
+        "product"
+      ]
+    }
+  }
+}

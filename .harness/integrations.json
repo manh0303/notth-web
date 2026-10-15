@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "connections": {
+    "figma": {
+      "via": "connector",
+      "binding": "figma",
+      "purpose": "Editable NOTTH website design",
+      "access": "write",
+      "scope": [
+        "eAPVui9EUPPdsQCdpfICEJ"
+      ]
+    },
+    "github": {
+      "via": "connector",
+      "binding": "github",
+      "purpose": "Website branch docs/code/evidence; framework read only",
+      "access": "write",
+      "scope": [
+        "manh0303/notth-web"
+      ]
+    }
+  }
+}

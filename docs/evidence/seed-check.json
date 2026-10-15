@@ -1,0 +1,21 @@
+{
+  "status": "ok",
+  "structured": true,
+  "changed_sources": [],
+  "sources": [
+    "AGENTS.md",
+    "README.md",
+    "docs/product/README.md",
+    "docs/product/decision-log.md",
+    "docs/product/source-register.md",
+    "docs/product/srs.md"
+  ],
+  "knowledge_hash": "d4de9fda7184cecd59d598ceeb846e21efa92b5c951036e4f0b8e76a913530f2",
+  "note": "Local declared-source freshness only; remote revisions and facts remain host-verified. Summaries do not override scoped instructions.",
+  "freshness": "current",
+  "next_steps": [
+    "Use /harness-start in your AI session; inspect changed/new sources, populate structured local.md and shared environment.json.",
+    "Keep personal paths in ignored machine.json. Record only evidence-backed facts and already approved deviations.",
+    "After reconciliation run aih seed --record; --check detects changes without updating the cache."
+  ]
+}
