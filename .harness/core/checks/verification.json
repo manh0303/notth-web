@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "checks": [
+    {
+      "id": "security-review",
+      "title": "Manual Core security and permission gate review",
+      "command": [],
+      "when_file": null,
+      "evidence": [
+        "Threat boundary and connector permission review",
+        "No production write/merge approval laundering",
+        "Evidence for commands actually executed"
+      ],
+      "execution": "manual"
+    },
+    {
+      "id": "spec-traceability",
+      "title": "Manual requirement and acceptance traceability check",
+      "command": [],
+      "when_file": null,
+      "evidence": [
+        "Source revision and approved requirement IDs",
+        "Acceptance scenario references and unresolved decisions"
+      ],
+      "execution": "manual"
+    },
+    {
+      "id": "project-conventions",
+      "title": "Review scope, reuse and architecture fit",
+      "command": [],
+      "when_file": null,
+      "evidence": [
+        "New/maintain/mixed scope per affected module and authoritative convention sources",
+        "Search scope, reusable public API paths, intended placement and new-code rationale",
+        "No dependency cycles, parallel common framework, unrelated refactor or unused code; report exceptions",
+        "Actual configured checks and manual boundary review, with limitations"
+      ],
+      "execution": "manual"
+    },
+    {
+      "id": "solution-framing",
+      "title": "MVP and architecture impact fit at proportional depth",
+      "command": [],
+      "when_file": null,
+      "evidence": [
+        "Source-linked context and applicable approved MVP/AC/NFR/ADR",
+        "Justified pattern/boundary choice and implementation/dependency plan",
+        "Actual decisions and verification; no unnecessary full-document gate"
+      ],
+      "execution": "manual"
+    },
+    {
+      "id": "agent-host-fit",
+      "title": "Verify agent preferences in the actual host",
+      "command": [],
+      "when_file": null,
+      "evidence": [
+        "Declared vs actual model/provider/effort and selected role namespace",
+        "Actual delegation/thread semantics or sequential-role limitation",
+        "No premium fallback, fake token meter or overwritten host configuration"
+      ],
+      "execution": "manual"
+    },
+    {
+      "id": "artifact-maintenance",
+      "title": "Review input/output ownership, source writes and spec-driven maintenance",
+      "command": [],
+      "when_file": null,
+      "evidence": [
+        "Declared input revisions, output destinations and single canonical owner per group",
+        "Actual host connection/access and bounded write authorization; no credentials in project config",
+        "Reviewed artifact-impact coverage with docs/spec/UI diffs or explicit blocked dependencies"
+      ],
+      "execution": "manual"
+    },
+    {
+      "id": "adaptive-evidence-review",
+      "title": "Review proportional verification and selective docs",
+      "command": [],
+      "when_file": null,
+      "evidence": [
+        "Applicable project methods and actual host limitations",
+        "Requirement-linked raw evidence, business assertions and owned cleanup",
+        "Static UNVERIFIED claims and affected-section source policy"
+      ],
+      "execution": "manual"
+    },
+    {
+      "id": "continuous-development",
+      "title": "Review baseline continuity and scoped completion",
+      "command": [],
+      "when_file": null,
+      "evidence": [
+        "Current vs handoff revisions, authority decisions and invalidated stale evidence",
+        "Artifact create/update/unchanged reasons, section diffs/proposals and pre-write revision recheck",
+        "Stable requirement/spec/code/test links with AC results and BLOCKED/NOT_RUN limits",
+        "Proposed feedback vs accepted scope; remaining work and distinct implementation/merge/release evidence"
+      ],
+      "execution": "manual"
+    },
+    {
+      "id": "agent-first-review",
+      "title": "Review scoped role/design authority and checkpoint recovery",
+      "command": [],
+      "when_file": null,
+      "evidence": [
+        "No unapproved adapter infrastructure or design recipe",
+        "Canonical role/skill handoff with source/AC evidence",
+        "Reconciled baseline, side effects and measured or unknown usage"
+      ],
+      "execution": "manual"
+    },
+    {
+      "id": "end-user-acceptance",
+      "title": "Review actual user-journey evidence and blocked dependencies",
+      "command": [],
+      "when_file": null,
+      "evidence": [
+        "Requirement surface and actual browser/device/CLI/API interaction at the tested revision",
+        "AC-linked visible/persisted outcomes, real vs mocked dependency scope and redacted attachments",
+        "Isolated actor/data/cleanup; required missing tools/account/environment explicitly BLOCKED or NOT_RUN"
+      ],
+      "execution": "manual"
+    },
+    {
+      "id": "recoverable-project-work",
+      "title": "Review grouped recovery and optional knowledge authority",
+      "command": [],
+      "when_file": null,
+      "evidence": [
+        "Host/project-specific process and fixture ownership; bounded readiness and cleanup",
+        "Incremental actual evidence/draft updates and baseline-aware checkpoint/side-effect reconciliation",
+        "Source-linked optional knowledge; no copied domain or mandatory extra document tree"
+      ],
+      "execution": "manual"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "agents": {
+    "analysis:business-analyst": {
+      "model": "@balanced",
+      "reasoning": "medium"
+    },
+    "analysis:requirements-reviewer": {
+      "model": "@balanced",
+      "reasoning": "high"
+    },
+    "architecture:architecture-reviewer": {
+      "model": "@balanced",
+      "reasoning": "high"
+    },
+    "architecture:solution-architect": {
+      "model": "@balanced",
+      "reasoning": "high"
+    },
+    "core:documentation": {
+      "model": "@economy",
+      "reasoning": "low"
+    },
+    "core:implementer": {
+      "model": "@balanced",
+      "reasoning": "medium"
+    },
+    "core:orchestrator": {
+      "model": "@balanced",
+      "reasoning": "high"
+    },
+    "core:planner": {
+      "model": "@balanced",
+      "reasoning": "high"
+    },
+    "core:project-manager": {
+      "model": "@balanced",
+      "reasoning": "medium"
+    },
+    "core:reviewer": {
+      "model": "@balanced",
+      "reasoning": "high"
+    },
+    "core:security-reviewer": {
+      "model": "@balanced",
+      "reasoning": "high"
+    },
+    "core:test-engineer": {
+      "model": "@balanced",
+      "reasoning": "medium"
+    },
+    "delivery:project-manager": {
+      "model": "@balanced",
+      "reasoning": "medium"
+    },
+    "discovery:product-manager": {
+      "model": "@balanced",
+      "reasoning": "medium"
+    },
+    "discovery:product-owner": {
+      "model": "@balanced",
+      "reasoning": "medium"
+    },
+    "product:business-analyst": {
+      "model": "@balanced",
+      "reasoning": "medium"
+    },
+    "product:product-manager": {
+      "model": "@balanced",
+      "reasoning": "medium"
+    },
+    "product:product-owner": {
+      "model": "@balanced",
+      "reasoning": "medium"
+    },
+    "product:project-manager": {
+      "model": "@balanced",
+      "reasoning": "medium"
+    },
+    "product:requirements-reviewer": {
+      "model": "@balanced",
+      "reasoning": "high"
+    }
+  },
+  "defaultModel": "host-default",
+  "defaultReasoning": "medium",
+  "execution": {
+    "autoEscalateToPremium": false,
+    "maxConcurrentAgents": 2,
+    "maxRounds": 3,
+    "mode": "hybrid"
+  },
+  "hosts": {},
+  "models": {
+    "balanced": "host-default",
+    "economy": "host-default",
+    "premium": "host-default"
+  },
+  "provider": "host",
+  "schema_version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "decisions": [
+    {
+      "id": "site-stack",
+      "scope": "project",
+      "status": "confirmed",
+      "question": "What stack and destination?",
+      "answer": "Astro, TypeScript, CSS; GitHub Pages /notth-web/; new website repository.",
+      "reason": "Explicit owner constraints.",
+      "source": "docs/product/source-register.md SRC-001"
+    },
+    {
+      "id": "approval-gates",
+      "scope": "project",
+      "status": "confirmed",
+      "question": "Who approves milestones?",
+      "answer": "Owner approves requirements before design, design before production UI completion, UAT before acceptance; no auto-merge or auto-release.",
+      "reason": "Explicit owner gates.",
+      "source": "docs/product/decision-log.md"
+    },
+    {
+      "id": "mvp-language",
+      "scope": "project",
+      "status": "proposed",
+      "question": "Initial content language and documentation scope?",
+      "answer": "English homepage; official docs remain in framework repo.",
+      "reason": "Minimal initial product scope.",
+      "source": "docs/product/prd.md"
+    }
+  ]
+}
