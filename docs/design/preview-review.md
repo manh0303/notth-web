@@ -25,3 +25,7 @@ The accessible heading stays “Nothing unnecessary.”. With reduced motion, no
 Owner-requested simplification changes FR-002 to stage names only and FR-003 to official external setup documentation. Removes clipboard and mobile-menu states because those controls no longer exist. The future setup clip is deferred until real recording/content is available. Approved Gate 1 documents remain historical; docs/product/decision-log.md and acceptance-criteria.md record this change explicitly.
 
 Review requested: approve the minimal composition, typography/color, headline motion and responsive layout, or request revisions. Gate 2 approval remains required before production completion. Full production QA/Lighthouse, SEO hardening, CI/Pages, UAT and specifically authorized release remain pending.
+
+## Approval update
+
+Gate 2 approved and PR #2 merged; see ../product/gate-2-approval.md. Earlier pending labels describe the proposal stage. Production hardening preserves the accepted v0.2 composition; Gate 3 and publication are pending.

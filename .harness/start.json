@@ -1,5 +1,5 @@
 {
   "goal": "change",
   "schema_version": 1,
-  "task": "Gate 2 Astro browser prototype authorized; await owner design approval before production completion."
+  "task": "Gate 2 approved; complete production hardening, verification and Gate 3 owner UAT package. No auto-merge/release/deploy."
 }

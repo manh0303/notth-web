@@ -3,7 +3,7 @@ import AxeBuilder from '@axe-core/playwright';
 
 const steps = ['Requirements', 'Design', 'Code', 'Test', 'Review'];
 for (const width of [375, 768, 1440]) {
-  test(`Minimal homepage and accessibility at ${width}px`, async ({ page }) => {
+  test(`Minimal homepage and accessibility at ${width}px`, async ({ page }, testInfo) => {
     await page.setViewportSize({ width, height: 1000 });
     await page.emulateMedia({ reducedMotion: 'reduce' });
     const errors: string[] = [];
@@ -23,7 +23,7 @@ for (const width of [375, 768, 1440]) {
     await expect(page.locator('link[rel=canonical]')).toHaveAttribute('href', 'https://manh0303.github.io/notth-web/');
     const axe = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze();
     expect(axe.violations.filter(v => ['critical', 'serious'].includes(v.impact ?? ''))).toEqual([]);
-    await page.screenshot({ path: `docs/evidence/minimal/${width}.png`, fullPage: true });
+    await page.screenshot({ path: `docs/evidence/production/${testInfo.project.name}-${width}.png`, fullPage: true });
     expect(errors).toEqual([]);
   });
 }
@@ -72,15 +72,16 @@ test('Mobile keyboard navigation stays directly available', async ({ page }) => 
   await expect(page.getByRole('link', { name: 'Get started' })).toBeFocused();
 });
 
-test('No-JS homepage keeps tagline and installation/docs links', async ({ browser }) => {
-  const context = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 375, height: 812 } });
-  const page = await context.newPage();
-  await page.goto('http://localhost:4173/notth-web/');
-  await expect(page.locator('h1 [data-letters]')).toHaveText('nothing');
-  await expect(page.getByRole('navigation', { name: 'Main navigation' })).toBeVisible();
-  await expect(page.getByRole('link', { name: 'Get started' })).toBeVisible();
-  await expect(page.locator('.step-name')).toHaveText(steps);
-  await context.close();
+test.describe('Without JavaScript', () => {
+  test.use({ javaScriptEnabled: false });
+  test('No-JS homepage keeps tagline and installation/docs links', async ({ page }) => {
+    await page.setViewportSize({ width: 375, height: 812 });
+    await page.goto('./');
+    await expect(page.locator('h1 [data-letters]')).toHaveText('nothing');
+    await expect(page.getByRole('navigation', { name: 'Main navigation' })).toBeVisible();
+    await expect(page.getByRole('link', { name: 'Get started' })).toBeVisible();
+    await expect(page.locator('.step-name')).toHaveText(steps);
+  });
 });
 
 test('200% equivalent desktop reflow', async ({ page }) => {
@@ -90,12 +91,54 @@ test('200% equivalent desktop reflow', async ({ page }) => {
   await expect(page.getByRole('link', { name: 'Get started' })).toBeVisible();
 });
 
-test('Portable HTML opens offline and animates the headline', async ({ page }) => {
+test('Portable HTML opens offline and animates the headline', async ({ page }, testInfo) => {
   const { pathToFileURL } = await import('node:url');
   const { resolve } = await import('node:path');
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto(pathToFileURL(resolve('docs/design/notth-preview.html')).href);
   await expect(page.locator('h1 [data-letters]')).toHaveText('nothing');
   expect(await page.locator('body').evaluate(el => getComputedStyle(el).fontFamily)).toContain('Inter');
-  await page.screenshot({ path: 'docs/evidence/minimal/desktop.png', fullPage: true });
+  await page.screenshot({ path: `docs/evidence/production/${testInfo.project.name}-desktop.png`, fullPage: true });
+});
+
+test('SEO, discovery files and base-path assets', async ({ page, request }) => {
+  await page.goto('./');
+  await expect(page).toHaveTitle('NOTTH — Nothing unnecessary.');
+  await expect(page.locator('html')).toHaveAttribute('lang', 'en');
+  await expect(page.locator('meta[name="description"]')).toHaveAttribute('content', /Requirements|requirements/);
+  await expect(page.locator('meta[property="og:image"]')).toHaveAttribute('content', 'https://manh0303.github.io/notth-web/social-card.png');
+  for (const [path, type] of [['sitemap.xml', 'application/xml'], ['robots.txt', 'text/plain'], ['favicon.svg', 'image/svg+xml'], ['social-card.png', 'image/png']]) {
+    const response = await request.get(path);
+    expect(response.status()).toBe(200);
+    expect(response.headers()['content-type']).toContain(type);
+    if (path === 'sitemap.xml') expect(await response.text()).toContain('<loc>https://manh0303.github.io/notth-web/</loc>');
+    if (path === 'robots.txt') expect(await response.text()).toContain('Sitemap: https://manh0303.github.io/notth-web/sitemap.xml');
+  }
+  await expect(page.getByRole('link', { name: 'Docs' })).toHaveAttribute('href', 'https://github.com/manh0303/notth/tree/main/docs');
+  await expect(page.getByRole('link', { name: 'GitHub', exact: true })).toHaveAttribute('href', 'https://github.com/manh0303/notth');
+  await expect(page.getByRole('link', { name: 'MIT License' })).toHaveAttribute('href', 'https://github.com/manh0303/notth/blob/main/LICENSE');
+});
+
+test('Real-time headline timing and live reduced-motion preference', async ({ page }) => {
+  await page.addInitScript(() => {
+    const events: { text: string; time: number }[] = [];
+    Object.defineProperty(window, '__motionEvents', { value: events });
+    new MutationObserver(() => {
+      const text = document.querySelector('[data-letters]')?.textContent;
+      if (text && events.at(-1)?.text !== text) events.push({ text, time: performance.now() });
+    }).observe(document, { subtree: true, childList: true, characterData: true });
+  });
+  await page.goto('./');
+  await expect(page.locator('[data-letters]')).toHaveText('nothing');
+  const events = await page.evaluate(() => (window as unknown as Window & { __motionEvents: { text: string; time: number }[] }).__motionEvents);
+  const start = events.findIndex(event => event.text === 'notth');
+  const animation = events.slice(start);
+  expect(animation.map(event => event.text)).toEqual(['notth', 'nott', 'not', 'noth', 'nothi', 'nothin', 'nothing']);
+  const pause = animation[3].time - animation[2].time;
+  expect(pause).toBeGreaterThanOrEqual(450);
+  expect(pause).toBeLessThanOrEqual(650);
+  await page.reload();
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await expect(page.locator('[data-letters]')).toHaveText('nothing');
+  await expect(page.locator('.caret')).toBeHidden();
 });

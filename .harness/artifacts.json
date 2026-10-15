@@ -50,7 +50,7 @@
         "path": "docs/design"
       },
       "canonical": true,
-      "status": "draft",
+      "status": "approved",
       "write_policy": "write",
       "owner": "project-owner",
       "sources": [
@@ -58,7 +58,8 @@
       ],
       "depends_on": [
         "product"
-      ]
+      ],
+      "revision": "gate2-main-ca850a1d8c6f7ca4e7bd79b1dca58045ce89f7fc"
     }
   }
 }

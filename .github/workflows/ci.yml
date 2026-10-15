@@ -1,0 +1,44 @@
+name: Verify website
+on:
+  pull_request:
+  push:
+    branches: [main, 'feat/**']
+  workflow_call:
+    inputs:
+      pages-artifact:
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium firefox webkit
+      - run: npm audit --audit-level=high
+      - run: npm run check
+      - run: npm run build
+      - run: npm run export:preview
+      - run: npm run test:e2e
+      - run: npm run audit:lighthouse
+      - name: Retain actual QA evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: qa-${{ github.sha }}
+          path: |
+            docs/evidence/production/
+            test-results/
+          retention-days: 30
+      - name: Upload reviewed static site
+        if: inputs.pages-artifact
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
+        with:
+          path: dist

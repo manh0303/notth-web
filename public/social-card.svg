@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#09090d"/>
+  <g font-family="Arial, sans-serif"><text x="80" y="110" font-size="38" font-weight="bold" fill="#f5f3fa">no<tspan fill="#b8a0ff">t</tspan><tspan fill="#d0bdff">t</tspan>h.</text>
+  <text x="80" y="280" font-size="92" letter-spacing="-5" fill="#f5f3fa">nothing</text>
+  <text x="80" y="382" font-size="92" letter-spacing="-5" fill="#b8a0ff">unnecessary.</text>
+  <path d="M80 470H1120" stroke="#2a2934"/>
+  <text x="80" y="530" font-size="24" fill="#aaa6b6">Requirements → Design → Code → Test → Review</text></g>
+</svg>

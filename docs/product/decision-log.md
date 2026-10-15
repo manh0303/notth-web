@@ -26,3 +26,7 @@ Gate 1 decision update: owner said “oke đã merge gate 1”; PR #1 merge conf
 ## DEC-008 — Minimal homepage (owner-directed)
 
 2026-10-15: Owner requests extreme simplification: move logo typing to the headline, reserve former logo box for future short setup GIF/video, and retain only the five workflow stages below. Removes feature/tool/installation/extra CTA sections from the design scope. FR-002 becomes stage names; FR-003 links official setup docs rather than embedding steps. Reduced/no-JS headline stays static “nothing unnecessary.”. Future recording is deferred. This authorizes the revision, not Gate 2 acceptance or release. See ../design/preview-review.md v0.2.
+
+## DEC-009 — Gate 2 approved
+
+2026-10-15: Owner confirms merge and authorizes continuation. PR #2 merged at ca850a1d8c6f7ca4e7bd79b1dca58045ce89f7fc. Minimal v0.2/DEC-008 is the approved production design. Complete QA and prepare Gate 3; acceptance, next merge and release remain owner decisions. See gate-2-approval.md.

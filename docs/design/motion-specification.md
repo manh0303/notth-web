@@ -17,3 +17,7 @@ DEC-008 moves the visual animation into the first line of h1. Stable accessible 
 Run once per page load. Fixed line height/reserved width prevent layout shifts. Caret translates to measured text width plus 5px with a 90ms ease-out transition; reposition after fonts load and on resize. No animated media yet.
 
 Reduced motion, no JS and live preference changes: static final “nothing unnecessary.” with hidden caret. This explicitly supersedes the old separate-logo-panel static fallback. Tests observe sequence, pause and unchanged h1/media bounds in ../evidence/minimal/.
+
+## Approval update
+
+Gate 2 approved and PR #2 merged; see ../product/gate-2-approval.md. Earlier pending labels describe the proposal stage. Production hardening preserves the accepted v0.2 composition; Gate 3 and publication are pending.
