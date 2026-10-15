@@ -50,3 +50,17 @@ Actual Figma canvas inspection succeeded; fonts and subscribed libraries retriev
 Prepared screen inventory, responsive/state plan, proposed brand foundations and motion choreography in docs/design. Proposed palette contrast was calculated; this is math only. Design-system asset search incomplete; no assertion that libraries are empty. Figma authoring and visual/prototype validation BLOCKED. Production code/browser QA/UAT/deployment NOT_RUN.
 
 Current checkpoint: feat/figma-design-baseline; Gate 2 not ready. Next executable action requires restored permitted Figma quota/access. Read docs/design/figma-state.json and figma-blocker.md, inspect actual file before retrying; then author/verify editable designs and request owner Gate 2 approval. Requirements approval need not be requested again. No framework modifications, merge or release.
+
+## Browser prototype checkpoint — 2026-10-15
+
+Owner authorized temporarily deferring Figma/Penpot and reviewing an Astro browser prototype. Gate 1 main still 28845004beed126eb72d4bbbd70c94b2835c39fa; PR #2 was open/draft at intake. Installed Harness remains 0.17.0 from source revision 11d662c9064cc989373e36b8c546cfb323a9b023; no framework modifications.
+
+Loaded harness-start, foundations/security/permissions/conventions, Astro architecture/performance guidance, continuous-development, artifact-contract, spec-to-code, end-user-acceptance and harness-review. Roles performed sequentially; no claim of independent QA. `start --compact --host codex` and `seed --check` ran; initial freshness current. Added prototype, reusable components, native scripts, portable review export and Playwright checks. Gates remain separate from structural checks.
+
+Recovery: latest Playwright 1.64.1 browser archive downloads were empty/invalid. Pinned 1.51.1 recovered using its official fallback mirror (Chromium 134); this browser is older and does not establish current cross-browser coverage. Sites supervisor reported ready but was unreachable from test process; Astro preview process exited in this host. Replaced test serving with a scoped static-build HTTP fixture owned by Playwright. No alternate production host or deployment was created. Initial environment failures retained in preview/*.json. Actual defects (ARIA roles, mobile decorative overlap/contrast) fixed; clock test corrected to pause the clock before navigation rather than letting real time drift during assertions.
+
+Evaluation: Harness gave useful role/requirement/approval/recovery contracts. CLI orientation does not perform browser tests or enforce gates. Improvement: document a browser-preview exception and environment-specific evidence adapter for external design quota outages; clarify readiness versus owner acceptance. Source installation worked previously; npm still returns E404 on recheck. Figma/Penpot editable output remains DEFERRED, not successful integration evidence.
+
+Next executable step: owner reviews docs/design/notth-preview.html and preview-review.md for Gate 2. On approval, complete production hardening, full QA, UAT, CI and specifically approved deployment. Current state: prototype prepared, not merged, not released, owner acceptance pending.
+
+Final validation note: adding tests exposed missing Node typings and mixed Playwright-core types after recovery. Added pinned @types/node and a Playwright-core 1.51.1 override; final type check reports 0 errors/warnings/hints.

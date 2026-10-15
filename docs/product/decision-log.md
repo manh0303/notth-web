@@ -18,3 +18,7 @@ Version: 0.1 | Status: PENDING OWNER REVIEW | Owner: Nguyễn Đức Mạnh | Da
 Approval must reference reviewed revision/version, scope, approver and date. Gate 1 approval is not permission to skip Gate 2 or UAT. Private-repository GitHub Pages entitlement is unknown; do not make repository public or upgrade plans without owner authorization.
 
 Gate 1 decision update: owner said “oke đã merge gate 1”; PR #1 merge confirmed at 28845004beed126eb72d4bbbd70c94b2835c39fa. DEC-003/004/005 proposals are accepted within v0.1 scope; DEC-006 stays a Gate 2 motion proposal. Actual Figma authoring is quota-blocked; see ../design/figma-blocker.md.
+
+## DEC-007 — Browser design review (owner confirmed)
+
+2026-10-15: Owner temporarily defers Figma/Penpot and authorizes Astro browser preview ("Oke triển đi"). This changes the Gate 2 review medium only. Editable external design deliverables are deferred, not completed. Gate 2 approval, owner UAT and release approval remain pending. See ../design/preview-review.md.

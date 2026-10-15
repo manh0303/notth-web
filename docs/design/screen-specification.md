@@ -1,4 +1,4 @@
-Version: 0.1-design-draft | Status: FIGMA AUTHORING BLOCKED | Date: 2026-10-15
+Version: 0.1-design-draft | Status: BROWSER PROTOTYPE — GATE 2 PENDING | Date: 2026-10-15
 
 # Screen and interaction specification
 
@@ -38,3 +38,7 @@ Install panel must state source/offline path while npm availability is unverifie
 ## Review checks once authoring is available
 
 Check frame readability, text clipping/overlaps, font names, shared component instances, variable bindings, contrast, keyboard intent, minimum touch targets and complete content across all three viewports. Return actual node IDs, rendered composition evidence and exceptions. No screenshot substitutes for editable Figma objects.
+
+## Owner-approved review-medium change
+
+Editable Figma/Penpot authoring is temporarily deferred. The browser prototype and review guide in preview-review.md now instantiate this proposal; no Figma frame IDs or component bindings are claimed. Desktop, tablet and mobile references use actual viewport evidence.

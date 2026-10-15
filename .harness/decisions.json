@@ -36,6 +36,15 @@
       "answer": "Owner approved requirements v0.1 and merged PR #1. Gate 2/3 and release are not approved.",
       "reason": "Explicit owner message and observed merge.",
       "source": "docs/product/gate-1-approval.md"
+    },
+    {
+      "id": "gate2-browser-preview",
+      "scope": "project",
+      "status": "confirmed",
+      "question": "May the design review proceed without Figma/Penpot?",
+      "answer": "Owner temporarily deferred Figma/Penpot and authorized an Astro browser prototype for Gate 2. Editable external designs are deferred. Gate 2, Gate 3, merge and release still require approval.",
+      "reason": "Owner: T\u1ea1m b\u1ecf qua figma \u0111c ko, then Oke tri\u1ec3n \u0111i after browser-preview proposal.",
+      "source": "docs/design/preview-review.md"
     }
   ]
 }

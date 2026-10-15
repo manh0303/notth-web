@@ -1,0 +1,24 @@
+<div class="brand-study" role="img" aria-label="NOTTH — Nothing unnecessary">
+  <div class="study-top mono" aria-hidden="true"><span>LESS, WITH INTENT.</span><span>01 / 01</span></div>
+  <div class="motion-stage" aria-hidden="true"><span class="motion-word" data-motion><span data-letters>no<span class="t-one">t</span><span class="t-two">t</span>h</span><span class="caret"></span></span></div>
+  <div class="study-bottom mono" aria-hidden="true"><span>A little less noise.</span><span>A lot more focus.</span></div>
+</div>
+<script>
+  const word = document.querySelector<HTMLElement>('[data-motion]');
+  const letters = word?.querySelector<HTMLElement>('[data-letters]');
+  const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const timers: ReturnType<typeof setTimeout>[] = [];
+  const reset = () => {
+    timers.splice(0).forEach(clearTimeout);
+    word?.classList.remove('playing');
+    word?.style.setProperty('--chars', '5');
+    if (letters) letters.innerHTML = 'no<span class="t-one">t</span><span class="t-two">t</span>h';
+  };
+  if (word && letters && !preference.matches) {
+    word.classList.add('playing');
+    const frames: [number, string][] = [[1200, 'nott'], [1320, 'not'], [1820, 'noth'], [1960, 'nothi'], [2100, 'nothin'], [2240, 'nothing']];
+    frames.forEach(([delay, value]) => timers.push(setTimeout(() => { letters.textContent = value; word.style.setProperty('--chars', String(value.length)); }, delay)));
+    timers.push(setTimeout(() => word.classList.remove('playing'), 4040));
+  }
+  preference.addEventListener('change', reset);
+</script>

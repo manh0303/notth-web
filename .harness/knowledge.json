@@ -2,20 +2,22 @@
   "bundle_sha256": "05e72e255e593d24f663425dd04541fb8dd1b57d1f7b6968939be25b79c07bcc",
   "context_hashes": {
     ".harness/agents.json": "2a4af46ee8d252315dd09905688857c9e191b13cf4d91c39afca67dd707912fd",
-    ".harness/artifacts.json": "ae998583a3cc114b2ad25d9e8d1f687d7471718aaf3c021b72b6b1b17f3f488d",
-    ".harness/decisions.json": "d536c25c8638b9ac150c5376d88592f992f037b387df5538069058c911557e40",
+    ".harness/artifacts.json": "63fc3f5facb4e931a54d46e6c6c604208ac069bab5e96b85fa7172490ac85c71",
+    ".harness/decisions.json": "ffe1963ea5fe02eb498963c53abd9137dea58fa1e41cc00de81a4e98c7669310",
     ".harness/environment.json": "d14d43fb6036b6e3f78c72fdc2eb877318e4e6e59059fcf184f7b4a7806004fd",
     ".harness/integrations.json": "a61fda8e3afccd8946da825ead3fa8dd71084c9c648b195db3205f674a817a17",
-    ".harness/local.md": "8bf6d072da5882764b220ceaf5af3e790c8dac14810dd7f9d5943457f5ff888c"
+    ".harness/local.md": "76163f34fe5db9d234c677fb10cf828b1467ca2b3b2e67010bbe9fc6924d7e69"
   },
-  "knowledge_hash": "a17f47818fa9016e25409d0b4cb584a005bcf0062b67f243ba524300c2a764fb",
+  "knowledge_hash": "f63ae61455336082c7af7e3a531f1b4e086d4e90ed7a5e3fb729ce85e9254782",
   "schema_version": 1,
   "source_hashes": {
     "AGENTS.md": "874a3030498500f499b5908089e227dd3e4230b339b3395e9fa45f8c20071941",
-    "README.md": "47150869cd2ea7930a9e42dda87664727c5b2e7ba0f87f295bba1a9ac2f907ba",
+    "README.md": "0611af9f657e99bc76be987fa921b7014332eff9e593f464ce5f13b7dc98bbbe",
+    "docs/evidence/preview/README.md": "b6ef34234739bfb2702c3963b32928a0c8b06011fcd4996bf9f1ec6344213eb1",
     "docs/product/README.md": "c29bd75e18a3135148139d8f3436aa49f6dacb0265acca405a7ef40b53511d89",
-    "docs/product/decision-log.md": "652027cc63043d25650be438a6dd31b558d4ff099442fb2f9a9507c62c26c1f6",
+    "docs/product/decision-log.md": "cf1bc57009b9bde1cf64b37f4684c485edb348726a9e50669294e2a0fd8eaef5",
     "docs/product/source-register.md": "fd9cd6b6b948625414a9e3d4839994400a6832ebd5f8536e8b97080a7f9e0a78",
-    "docs/product/srs.md": "88499869996e90725c859d262781a5671fe491791e70a52aa97dc8e6da05dd4a"
+    "docs/product/srs.md": "88499869996e90725c859d262781a5671fe491791e70a52aa97dc8e6da05dd4a",
+    "package.json": "0d2bb4363532d485feabee04d5aa6247fd1e369afa810b86a9e9374f8e965fdb"
   }
 }

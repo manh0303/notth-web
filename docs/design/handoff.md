@@ -17,3 +17,7 @@ Prepared proposals: screen-specification.md, foundations.md, motion-specificatio
 | SCR-005 reduced motion | FR-005, NFR-002 | BLOCKED | pending / NOT_RUN |
 
 Design skeleton/motion authoring scripts must be treated as unexecuted proposals until actual connected tool execution returns IDs. Code Connect is deferred until actual production Astro component paths exist; no fabricated map.
+
+## Current handoff — browser prototype
+
+Owner authorized temporarily deferring Figma/Penpot. See preview-review.md, ../architecture/technical-design.md, and ../../src for editable Astro/CSS. External design is not complete. The prototype is awaiting Gate 2 approval.

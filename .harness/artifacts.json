@@ -33,6 +33,22 @@
         "connection": "figma"
       },
       "revision": "page-0:1-gate1-pending",
+      "canonical": false,
+      "status": "draft",
+      "write_policy": "write",
+      "owner": "project-owner",
+      "sources": [
+        "framework"
+      ],
+      "depends_on": [
+        "product"
+      ]
+    },
+    "preview": {
+      "kind": "design",
+      "location": {
+        "path": "docs/design"
+      },
       "canonical": true,
       "status": "draft",
       "write_policy": "write",

@@ -1,0 +1,5 @@
+---
+interface Props { large?: boolean }
+const { large = false } = Astro.props;
+---
+<span class:list={['wordmark', { 'wordmark-large': large }]} role="img" aria-label="NOTTH"><span aria-hidden="true">no<span class="t-one">t</span><span class="t-two">t</span>h<span class="brand-dot">.</span></span></span>

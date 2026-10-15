@@ -22,3 +22,20 @@ IDs remain stable. Record code/test revisions and raw evidence paths when availa
 ## Gate 1 update — 2026-10-15
 
 Owner approved requirements v0.1; see gate-1-approval.md. Earlier pending statuses above are the historical draft snapshot. Current FR/NFR baseline approval: 10/10 at Gate 1. Actual Figma UI node/component/executed test mappings remain 0/10, quota-blocked. Prepared screen mapping is in ../design/handoff.md. Gate 2/3 acceptance not granted.
+
+## Gate 2 prototype mapping (owner design approval pending)
+
+External frame references are deferred by the owner-approved review-medium change. SCR references below refer to browser surfaces in ../design/preview-review.md, not Figma IDs.
+
+| Requirement | Surface/component | Actual check or remaining work |
+| --- | --- | --- |
+| FR-001 | SCR-001/002/003; Header, Wordmark, hero | Playwright layout and axe; owner visual decision pending |
+| FR-002 | Features/workflow in index.astro | Source README inspection + workflow order assertions |
+| FR-003 | Install.astro | npm E404 observed; source command, clipboard success and failure tests |
+| FR-004 | Header, footer, anchors | Anchor validity, menu, no-JS tests; production external-link verification pending |
+| FR-005 | BrandMotion.astro; SCR-005 | Exact sequence/500ms pause with controlled clock, reduced motion, stable stage bounds |
+| NFR-001 | global.css; SCR-001–004 | 375/768/1440 no overflow; 720px reflow equivalent, not actual browser zoom |
+| NFR-002 | Landmarks, roles, skip link, focus, motion | axe serious/critical checks; menu keyboard; full manual keyboard/AT pending |
+| NFR-003 | Base.astro, astro.config.mjs | Build, loaded assets, runtime errors, canonical; sitemap/robots/Lighthouse pending |
+| NFR-004 | This matrix, preview-review, source/tests/evidence | Browser design refs; editable Figma/Penpot deferred; owner review pending |
+| NFR-005 | Gate records and feature branch | No merge/release/deploy; UAT remains blocked pending approved production scope |
