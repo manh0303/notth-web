@@ -78,3 +78,7 @@ Added static discovery/social metadata, pinned patched QA tools, owner-initiated
 Evaluation: Harness supports source-linked gates/recovery/evidence contracts but does not run tests or authenticate owner approval. Existing report validation is useful for preserving pending acceptance alongside technical passes. Installation/browser package issues are host limitations; GitHub runner recovery was exercised. CI/owner-only/manual SHA guard protects against accidental push-triggered release, but owner UAT reference is still an attestation and environment protection must be configured by repository owner.
 
 Next: owner completes docs/qa/uat-checklist.md (manual 200% zoom and assistive reading pending) and accepts or requests changes for Gate 3. Merge/publication require separate authorization. Production verification remains NOT_RUN. PR #3 contains source/config/evidence/handover; no release completion claim.
+
+## Gate 3 approval checkpoint
+
+Owner explicitly approved Gate 3; PR #3 merge confirmed at 7ea9812ea4e7d88baa7333d171568bcc830185a1. Updated acceptance/decision/handover records only. Existing runtime evidence/report remains historical and unchanged; no manual test PASS is inferred from blanket acceptance. Documentation sign-off branch docs/gate-3-signoff. Next executable action needs explicit authorization to merge documentation/publish, then live verification. No runtime test repeat for documentation-only edits.

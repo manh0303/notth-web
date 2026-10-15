@@ -63,6 +63,15 @@
       "answer": "Owner approved minimal v0.2 design by merging PR #2; observed main ca850a1d8c6f7ca4e7bd79b1dca58045ce89f7fc. Proceed to production/QA/UAT preparation, not owner acceptance or publication.",
       "reason": "Owner message plus confirmed GitHub merge.",
       "source": "docs/product/gate-2-approval.md"
+    },
+    {
+      "id": "gate-3-approved",
+      "scope": "project",
+      "status": "confirmed",
+      "question": "Has the owner accepted the delivered scope?",
+      "answer": "Owner explicitly approves Gate 3; PR #3 merge confirmed at main 7ea9812ea4e7d88baa7333d171568bcc830185a1. Manual test evidence remains unverified; no publication or assistant merge permission inferred.",
+      "reason": "Owner message T\u00f4i duy\u1ec7t gate 3 r\u00f4ig and observed PR merge.",
+      "source": "docs/product/gate-3-approval.md"
     }
   ]
 }

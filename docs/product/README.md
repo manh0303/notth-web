@@ -16,3 +16,5 @@ Proposed MVP: one English homepage with Brand → Features → Workflow → Inst
 Approved scope: requirements version 0.1, English homepage, external official docs, source/offline installation while npm is unavailable, and the quality targets in the baseline. This does not approve visual design, UAT, merge or release.
 
 Gate 2 minimal v0.2 approved: [record](gate-2-approval.md). Current QA/UAT preparation: ../qa; release steps: ../delivery. Gate 3 remains pending.
+
+Gate 3 owner acceptance is now approved: [record](gate-3-approval.md). Production PR #3 merge confirmed. Publication/live verification remain pending authorization; manual evidence gaps remain explicit.

@@ -30,3 +30,7 @@ Gate 1 decision update: owner said “oke đã merge gate 1”; PR #1 merge conf
 ## DEC-009 — Gate 2 approved
 
 2026-10-15: Owner confirms merge and authorizes continuation. PR #2 merged at ca850a1d8c6f7ca4e7bd79b1dca58045ce89f7fc. Minimal v0.2/DEC-008 is the approved production design. Complete QA and prepare Gate 3; acceptance, next merge and release remain owner decisions. See gate-2-approval.md.
+
+## DEC-010 — Gate 3 owner acceptance
+
+2026-10-15: Owner explicitly approves Gate 3. PR #3 merge confirmed at main 7ea9812ea4e7d88baa7333d171568bcc830185a1. See gate-3-approval.md. Manual zoom/AT execution evidence was not supplied and is not invented. Publication and any assistant merge still require specific authorization.
