@@ -1,0 +1,208 @@
+{
+  "status": "ok",
+  "version": "0.17.0",
+  "problems": [],
+  "prerequisites": null,
+  "tools": {
+    "git": true,
+    "node": true,
+    "npm": true,
+    "java": true,
+    "mvn": false,
+    "openspec": false
+  },
+  "environment": {
+    "configured": true,
+    "machine_present": false,
+    "entries": [],
+    "problems": [],
+    "note": "Presence/reference checks only. No commands executed; values and arguments are omitted. Never store credentials here."
+  },
+  "decisions": {
+    "status": "ok",
+    "configured": true,
+    "path": ".harness/decisions.json",
+    "confirmed": [
+      {
+        "id": "site-stack",
+        "scope": "project",
+        "status": "confirmed",
+        "question": "What stack and destination?",
+        "answer": "Astro, TypeScript, CSS; GitHub Pages /notth-web/; new website repository.",
+        "reason": "Explicit owner constraints.",
+        "source": "docs/product/source-register.md SRC-001"
+      },
+      {
+        "id": "approval-gates",
+        "scope": "project",
+        "status": "confirmed",
+        "question": "Who approves milestones?",
+        "answer": "Owner approves requirements before design, design before production UI completion, UAT before acceptance; no auto-merge or auto-release.",
+        "reason": "Explicit owner gates.",
+        "source": "docs/product/decision-log.md"
+      },
+      {
+        "id": "mvp-language",
+        "scope": "project",
+        "status": "confirmed",
+        "question": "Initial content language and documentation scope?",
+        "answer": "English homepage; official docs remain in framework repo.",
+        "reason": "Owner approved Gate 1 and merged baseline PR #1.",
+        "source": "docs/product/gate-1-approval.md"
+      },
+      {
+        "id": "gate-1-approved",
+        "scope": "project",
+        "status": "confirmed",
+        "question": "May visual design begin?",
+        "answer": "Owner approved requirements v0.1 and merged PR #1. Gate 2/3 and release are not approved.",
+        "reason": "Explicit owner message and observed merge.",
+        "source": "docs/product/gate-1-approval.md"
+      },
+      {
+        "id": "gate2-browser-preview",
+        "scope": "project",
+        "status": "confirmed",
+        "question": "May the design review proceed without Figma/Penpot?",
+        "answer": "Owner temporarily deferred Figma/Penpot and authorized an Astro browser prototype for Gate 2. Editable external designs are deferred. Gate 2, Gate 3, merge and release still require approval.",
+        "reason": "Owner: Tạm bỏ qua figma đc ko, then Oke triển đi after browser-preview proposal.",
+        "source": "docs/design/preview-review.md"
+      },
+      {
+        "id": "minimal-homepage-v02",
+        "scope": "project",
+        "status": "confirmed",
+        "question": "What should remain in the revised design?",
+        "answer": "Owner requests headline typing animation, future setup-media placeholder and only the five workflow stage names below. Install becomes official docs link; reduced/no-JS headline is static final tagline. Gate 2 approval pending.",
+        "reason": "Explicit owner feedback on the v0.1 preview.",
+        "source": "docs/product/decision-log.md DEC-008"
+      },
+      {
+        "id": "gate-2-approved",
+        "scope": "project",
+        "status": "confirmed",
+        "question": "May production hardening and QA proceed?",
+        "answer": "Owner approved minimal v0.2 design by merging PR #2; observed main ca850a1d8c6f7ca4e7bd79b1dca58045ce89f7fc. Proceed to production/QA/UAT preparation, not owner acceptance or publication.",
+        "reason": "Owner message plus confirmed GitHub merge.",
+        "source": "docs/product/gate-2-approval.md"
+      }
+    ],
+    "proposed": [],
+    "superseded": [],
+    "note": "Recorded decisions are project context, not permissions. Reuse only while scope and sources remain applicable; changed evidence can require reconsideration, even with do_not_ask_again."
+  },
+  "context": {
+    "structured": true,
+    "warnings": []
+  },
+  "claude": {
+    "status": "unverified",
+    "files": [],
+    "warnings": [],
+    "note": "Local import inspection only. Ancestor/global files, host version/plugin/settings and actual instruction loading are unverified; confirm with Claude /context. No native settings are changed."
+  },
+  "artifacts": {
+    "status": "planned",
+    "configured": true,
+    "mode": "idea-driven",
+    "entries": [
+      {
+        "ref": "input:framework",
+        "kind": "source",
+        "location": {
+          "url": "https://github.com/manh0303/notth"
+        },
+        "owner": null,
+        "revision": "11d662c9064cc989373e36b8c546cfb323a9b023",
+        "capability": null,
+        "canonical": false,
+        "status": "draft",
+        "write_policy": "read-only",
+        "sources": [],
+        "depends_on": []
+      },
+      {
+        "ref": "output:product",
+        "kind": "docs",
+        "location": {
+          "path": "docs/product"
+        },
+        "owner": "project-owner",
+        "revision": "gate1-main-28845004beed126eb72d4bbbd70c94b2835c39fa",
+        "capability": "product",
+        "canonical": true,
+        "status": "approved",
+        "write_policy": "propose",
+        "sources": [
+          "framework"
+        ],
+        "depends_on": []
+      },
+      {
+        "ref": "output:ui",
+        "kind": "design",
+        "location": {
+          "url": "https://www.figma.com/design/eAPVui9EUPPdsQCdpfICEJ",
+          "connection": "figma"
+        },
+        "owner": "project-owner",
+        "revision": "page-0:1-gate1-pending",
+        "capability": null,
+        "canonical": false,
+        "status": "draft",
+        "write_policy": "write",
+        "sources": [
+          "framework"
+        ],
+        "depends_on": [
+          "product"
+        ]
+      },
+      {
+        "ref": "output:preview",
+        "kind": "design",
+        "location": {
+          "path": "docs/design"
+        },
+        "owner": "project-owner",
+        "revision": "gate2-main-ca850a1d8c6f7ca4e7bd79b1dca58045ce89f7fc",
+        "capability": null,
+        "canonical": true,
+        "status": "approved",
+        "write_policy": "write",
+        "sources": [
+          "framework"
+        ],
+        "depends_on": [
+          "product"
+        ]
+      }
+    ],
+    "connections": [
+      {
+        "id": "figma",
+        "via": "connector",
+        "binding": "figma",
+        "access": "write",
+        "scope": [
+          "eAPVui9EUPPdsQCdpfICEJ"
+        ],
+        "availability": "unverified"
+      },
+      {
+        "id": "github",
+        "via": "connector",
+        "binding": "github",
+        "access": "write",
+        "scope": [
+          "manh0303/notth-web"
+        ],
+        "availability": "unverified"
+      }
+    ],
+    "questions": [],
+    "executed": false,
+    "note": "Declared artifact contract only. No retrieval, publication, MCP discovery or permission enforcement. Host tools and authorization must be verified."
+  },
+  "note": "Tool presence only; no commands executed or compatibility claim made. Configured project tools take precedence over generic PATH hints."
+}

@@ -1,0 +1,1096 @@
+{
+  "schema_version": 1,
+  "metadata": {
+    "run_id": "notth-uat-candidate-38755808090",
+    "feature": "Approved minimal website production hardening",
+    "source_revision": "5b0e20da07833758bc43f974c12dc7b974c8554f",
+    "environment": "GitHub Actions Ubuntu; static local-origin production build",
+    "producer": "Codex; assertions sourced from real Playwright/Lighthouse run",
+    "timestamp": "2026-10-15T15:01:12.171551+00:00"
+  },
+  "requirements": [
+    {
+      "id": "FR-001",
+      "description": "Brand and actions",
+      "source": "docs/product/srs.md; DEC-008/009",
+      "verification_target": "end-user",
+      "surface": "web"
+    },
+    {
+      "id": "FR-002",
+      "description": "Accurate ordered workflow",
+      "source": "docs/product/srs.md; DEC-008/009",
+      "verification_target": "end-user",
+      "surface": "web"
+    },
+    {
+      "id": "FR-003",
+      "description": "Official setup link",
+      "source": "docs/product/srs.md; DEC-008/009",
+      "verification_target": "end-user",
+      "surface": "web"
+    },
+    {
+      "id": "FR-004",
+      "description": "Accessible navigation and no-JS",
+      "source": "docs/product/srs.md; DEC-008/009",
+      "verification_target": "end-user",
+      "surface": "web"
+    },
+    {
+      "id": "FR-005",
+      "description": "Headline motion",
+      "source": "docs/product/srs.md; DEC-008/009",
+      "verification_target": "end-user",
+      "surface": "web"
+    },
+    {
+      "id": "NFR-001",
+      "description": "Responsive layouts and real zoom",
+      "source": "docs/product/srs.md; DEC-008/009",
+      "verification_target": "end-user",
+      "surface": "web"
+    },
+    {
+      "id": "NFR-002",
+      "description": "Accessibility",
+      "source": "docs/product/srs.md; DEC-008/009",
+      "verification_target": "end-user",
+      "surface": "web"
+    },
+    {
+      "id": "NFR-003",
+      "description": "SEO, performance and live base path",
+      "source": "docs/product/srs.md; DEC-008/009"
+    },
+    {
+      "id": "NFR-004",
+      "description": "Traceability and owner acceptance",
+      "source": "docs/product/srs.md; DEC-008/009"
+    },
+    {
+      "id": "NFR-005",
+      "description": "Controlled release",
+      "source": "docs/product/srs.md; DEC-008/009"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "WEB-layout",
+      "status": "PASSED",
+      "executed": true,
+      "references": [
+        "FR-001",
+        "FR-002",
+        "NFR-001",
+        "NFR-002"
+      ],
+      "method": "browser-e2e",
+      "preconditions": [
+        "Approved Gate 2 v0.2",
+        "CI static build under /notth-web/"
+      ],
+      "steps": [
+        "Open actual built page at each approved viewport",
+        "Read brand, action and ordered workflow; inspect overflow and axe assertions"
+      ],
+      "fixture": "Runner-owned static build and Playwright browser contexts; no backend",
+      "expected": "All named public-interface assertions pass on each available CI browser",
+      "observed": "9 named CI test executions passed; raw test summary and archive retained",
+      "timestamp": "2026-10-15T14:57:27.412Z",
+      "mutates": false,
+      "cleanup": {
+        "strategy": "Runner closes owned browsers and static fixture",
+        "status": "PASSED"
+      },
+      "execution": {
+        "tool": "Playwright on GitHub Actions",
+        "command": [
+          "npm run test:e2e"
+        ],
+        "exit_code": 0,
+        "timeout_ms": 180000,
+        "attempts": 1,
+        "max_attempts": 1
+      },
+      "evidence": [
+        {
+          "path": "docs/evidence/production/ci-test-summary.json",
+          "sha256": "75273570d2ac611aa671ab5f2b966443f019ee1de47688294a4f2dc94c2ee3e7"
+        }
+      ],
+      "assertions": [
+        {
+          "id": "FR-001-0",
+          "basis": "FR-001",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/0/results/0"
+          }
+        },
+        {
+          "id": "FR-001-1",
+          "basis": "FR-001",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/1/results/0"
+          }
+        },
+        {
+          "id": "FR-001-2",
+          "basis": "FR-001",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/2/results/0"
+          }
+        },
+        {
+          "id": "FR-001-10",
+          "basis": "FR-001",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/10/results/0"
+          }
+        },
+        {
+          "id": "FR-001-11",
+          "basis": "FR-001",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/11/results/0"
+          }
+        },
+        {
+          "id": "FR-001-12",
+          "basis": "FR-001",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/12/results/0"
+          }
+        },
+        {
+          "id": "FR-001-20",
+          "basis": "FR-001",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/20/results/0"
+          }
+        },
+        {
+          "id": "FR-001-21",
+          "basis": "FR-001",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/21/results/0"
+          }
+        },
+        {
+          "id": "FR-001-22",
+          "basis": "FR-001",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/22/results/0"
+          }
+        },
+        {
+          "id": "FR-002-0",
+          "basis": "FR-002",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/0/results/0"
+          }
+        },
+        {
+          "id": "FR-002-1",
+          "basis": "FR-002",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/1/results/0"
+          }
+        },
+        {
+          "id": "FR-002-2",
+          "basis": "FR-002",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/2/results/0"
+          }
+        },
+        {
+          "id": "FR-002-10",
+          "basis": "FR-002",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/10/results/0"
+          }
+        },
+        {
+          "id": "FR-002-11",
+          "basis": "FR-002",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/11/results/0"
+          }
+        },
+        {
+          "id": "FR-002-12",
+          "basis": "FR-002",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/12/results/0"
+          }
+        },
+        {
+          "id": "FR-002-20",
+          "basis": "FR-002",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/20/results/0"
+          }
+        },
+        {
+          "id": "FR-002-21",
+          "basis": "FR-002",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/21/results/0"
+          }
+        },
+        {
+          "id": "FR-002-22",
+          "basis": "FR-002",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/22/results/0"
+          }
+        },
+        {
+          "id": "NFR-001-0",
+          "basis": "NFR-001",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/0/results/0"
+          }
+        },
+        {
+          "id": "NFR-001-1",
+          "basis": "NFR-001",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/1/results/0"
+          }
+        },
+        {
+          "id": "NFR-001-2",
+          "basis": "NFR-001",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/2/results/0"
+          }
+        },
+        {
+          "id": "NFR-001-10",
+          "basis": "NFR-001",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/10/results/0"
+          }
+        },
+        {
+          "id": "NFR-001-11",
+          "basis": "NFR-001",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/11/results/0"
+          }
+        },
+        {
+          "id": "NFR-001-12",
+          "basis": "NFR-001",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/12/results/0"
+          }
+        },
+        {
+          "id": "NFR-001-20",
+          "basis": "NFR-001",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/20/results/0"
+          }
+        },
+        {
+          "id": "NFR-001-21",
+          "basis": "NFR-001",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/21/results/0"
+          }
+        },
+        {
+          "id": "NFR-001-22",
+          "basis": "NFR-001",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/22/results/0"
+          }
+        },
+        {
+          "id": "NFR-002-0",
+          "basis": "NFR-002",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/0/results/0"
+          }
+        },
+        {
+          "id": "NFR-002-1",
+          "basis": "NFR-002",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/1/results/0"
+          }
+        },
+        {
+          "id": "NFR-002-2",
+          "basis": "NFR-002",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/2/results/0"
+          }
+        },
+        {
+          "id": "NFR-002-10",
+          "basis": "NFR-002",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/10/results/0"
+          }
+        },
+        {
+          "id": "NFR-002-11",
+          "basis": "NFR-002",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/11/results/0"
+          }
+        },
+        {
+          "id": "NFR-002-12",
+          "basis": "NFR-002",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/12/results/0"
+          }
+        },
+        {
+          "id": "NFR-002-20",
+          "basis": "NFR-002",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/20/results/0"
+          }
+        },
+        {
+          "id": "NFR-002-21",
+          "basis": "NFR-002",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/21/results/0"
+          }
+        },
+        {
+          "id": "NFR-002-22",
+          "basis": "NFR-002",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/22/results/0"
+          }
+        }
+      ],
+      "journey": {
+        "surface": "web",
+        "actor": "public visitor",
+        "entrypoint": "http://localhost:4173/notth-web/",
+        "interaction": "browser",
+        "dependencies": "not-applicable",
+        "attachments": []
+      }
+    },
+    {
+      "id": "WEB-links",
+      "status": "PASSED",
+      "executed": true,
+      "references": [
+        "FR-003",
+        "FR-004"
+      ],
+      "method": "browser-e2e",
+      "preconditions": [
+        "Approved Gate 2 v0.2",
+        "CI static build under /notth-web/"
+      ],
+      "steps": [
+        "Navigate actual built page using Tab to home, Docs, GitHub and Get started",
+        "Read public link destinations, discovery assets and no-JS content"
+      ],
+      "fixture": "Runner-owned static build and Playwright browser contexts; no backend",
+      "expected": "All named public-interface assertions pass on each available CI browser",
+      "observed": "9 named CI test executions passed; raw test summary and archive retained",
+      "timestamp": "2026-10-15T14:57:27.412Z",
+      "mutates": false,
+      "cleanup": {
+        "strategy": "Runner closes owned browsers and static fixture",
+        "status": "PASSED"
+      },
+      "execution": {
+        "tool": "Playwright on GitHub Actions",
+        "command": [
+          "npm run test:e2e"
+        ],
+        "exit_code": 0,
+        "timeout_ms": 180000,
+        "attempts": 1,
+        "max_attempts": 1
+      },
+      "evidence": [
+        {
+          "path": "docs/evidence/production/ci-test-summary.json",
+          "sha256": "75273570d2ac611aa671ab5f2b966443f019ee1de47688294a4f2dc94c2ee3e7"
+        }
+      ],
+      "assertions": [
+        {
+          "id": "FR-003-5",
+          "basis": "FR-003",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/5/results/0"
+          }
+        },
+        {
+          "id": "FR-003-8",
+          "basis": "FR-003",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/8/results/0"
+          }
+        },
+        {
+          "id": "FR-003-15",
+          "basis": "FR-003",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/15/results/0"
+          }
+        },
+        {
+          "id": "FR-003-18",
+          "basis": "FR-003",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/18/results/0"
+          }
+        },
+        {
+          "id": "FR-003-25",
+          "basis": "FR-003",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/25/results/0"
+          }
+        },
+        {
+          "id": "FR-003-28",
+          "basis": "FR-003",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/28/results/0"
+          }
+        },
+        {
+          "id": "FR-003-30",
+          "basis": "FR-003",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/30/results/0"
+          }
+        },
+        {
+          "id": "FR-003-31",
+          "basis": "FR-003",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/31/results/0"
+          }
+        },
+        {
+          "id": "FR-003-32",
+          "basis": "FR-003",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/32/results/0"
+          }
+        },
+        {
+          "id": "FR-004-5",
+          "basis": "FR-004",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/5/results/0"
+          }
+        },
+        {
+          "id": "FR-004-8",
+          "basis": "FR-004",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/8/results/0"
+          }
+        },
+        {
+          "id": "FR-004-15",
+          "basis": "FR-004",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/15/results/0"
+          }
+        },
+        {
+          "id": "FR-004-18",
+          "basis": "FR-004",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/18/results/0"
+          }
+        },
+        {
+          "id": "FR-004-25",
+          "basis": "FR-004",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/25/results/0"
+          }
+        },
+        {
+          "id": "FR-004-28",
+          "basis": "FR-004",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/28/results/0"
+          }
+        },
+        {
+          "id": "FR-004-30",
+          "basis": "FR-004",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/30/results/0"
+          }
+        },
+        {
+          "id": "FR-004-31",
+          "basis": "FR-004",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/31/results/0"
+          }
+        },
+        {
+          "id": "FR-004-32",
+          "basis": "FR-004",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/32/results/0"
+          }
+        }
+      ],
+      "journey": {
+        "surface": "web",
+        "actor": "public visitor",
+        "entrypoint": "http://localhost:4173/notth-web/",
+        "interaction": "browser",
+        "dependencies": "not-applicable",
+        "attachments": []
+      }
+    },
+    {
+      "id": "WEB-motion",
+      "status": "PASSED",
+      "executed": true,
+      "references": [
+        "FR-005"
+      ],
+      "method": "browser-e2e",
+      "preconditions": [
+        "Approved Gate 2 v0.2",
+        "CI static build under /notth-web/"
+      ],
+      "steps": [
+        "Open headline with normal motion and observe all seven values and reserved bounds",
+        "Verify 500ms pause under controlled clock and real-time 450\u2013650ms tolerance",
+        "Change reduced-motion preference and observe static final tagline"
+      ],
+      "fixture": "Runner-owned static build and Playwright browser contexts; no backend",
+      "expected": "All named public-interface assertions pass on each available CI browser",
+      "observed": "9 named CI test executions passed; raw test summary and archive retained",
+      "timestamp": "2026-10-15T14:57:27.412Z",
+      "mutates": false,
+      "cleanup": {
+        "strategy": "Runner closes owned browsers and static fixture",
+        "status": "PASSED"
+      },
+      "execution": {
+        "tool": "Playwright on GitHub Actions",
+        "command": [
+          "npm run test:e2e"
+        ],
+        "exit_code": 0,
+        "timeout_ms": 180000,
+        "attempts": 1,
+        "max_attempts": 1
+      },
+      "evidence": [
+        {
+          "path": "docs/evidence/production/ci-test-summary.json",
+          "sha256": "75273570d2ac611aa671ab5f2b966443f019ee1de47688294a4f2dc94c2ee3e7"
+        }
+      ],
+      "assertions": [
+        {
+          "id": "FR-005-3",
+          "basis": "FR-005",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/3/results/0"
+          }
+        },
+        {
+          "id": "FR-005-4",
+          "basis": "FR-005",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/4/results/0"
+          }
+        },
+        {
+          "id": "FR-005-9",
+          "basis": "FR-005",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/9/results/0"
+          }
+        },
+        {
+          "id": "FR-005-13",
+          "basis": "FR-005",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/13/results/0"
+          }
+        },
+        {
+          "id": "FR-005-14",
+          "basis": "FR-005",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/14/results/0"
+          }
+        },
+        {
+          "id": "FR-005-19",
+          "basis": "FR-005",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/19/results/0"
+          }
+        },
+        {
+          "id": "FR-005-23",
+          "basis": "FR-005",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/23/results/0"
+          }
+        },
+        {
+          "id": "FR-005-24",
+          "basis": "FR-005",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/24/results/0"
+          }
+        },
+        {
+          "id": "FR-005-29",
+          "basis": "FR-005",
+          "layer": "result",
+          "operator": "equal",
+          "expected": "passed",
+          "actual": {
+            "evidence": "docs/evidence/production/ci-test-summary.json",
+            "pointer": "/tests/29/results/0"
+          }
+        }
+      ],
+      "journey": {
+        "surface": "web",
+        "actor": "public visitor",
+        "entrypoint": "http://localhost:4173/notth-web/",
+        "interaction": "browser",
+        "dependencies": "not-applicable",
+        "attachments": []
+      }
+    },
+    {
+      "id": "AUDIT-mobile",
+      "status": "PASSED",
+      "executed": true,
+      "references": [
+        "NFR-003"
+      ],
+      "method": "audit",
+      "preconditions": [
+        "CI static production build"
+      ],
+      "steps": [
+        "Run Lighthouse mobile simulation three times",
+        "Compare medians with approved targets"
+      ],
+      "fixture": "Runner-owned local HTTP fixture and Chromium",
+      "expected": "Median Performance >=90, Accessibility >=95, SEO >=95",
+      "observed": "All three runs scored 100 for Performance/Accessibility/SEO; local origin only",
+      "timestamp": "2026-10-15T15:01:12.171551+00:00",
+      "mutates": false,
+      "cleanup": {
+        "strategy": "Close owned browser and server",
+        "status": "PASSED"
+      },
+      "execution": {
+        "tool": "Lighthouse 13.5.0",
+        "command": [
+          "npm run audit:lighthouse"
+        ],
+        "exit_code": 0,
+        "timeout_ms": 1200000,
+        "attempts": 1,
+        "max_attempts": 1
+      },
+      "evidence": [
+        {
+          "path": "docs/evidence/production/ci-lighthouse-summary.json",
+          "sha256": "8b33b761a10f178f041c012811a66bfacf1fe087e7eda804e217a957bb9e11bb"
+        }
+      ],
+      "assertions": [
+        {
+          "id": "budgets",
+          "basis": "NFR-003",
+          "layer": "result",
+          "operator": "equal",
+          "expected": true,
+          "actual": {
+            "evidence": "docs/evidence/production/ci-lighthouse-summary.json",
+            "pointer": "/passed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "MANUAL-zoom",
+      "status": "BLOCKED",
+      "executed": false,
+      "references": [
+        "NFR-001"
+      ],
+      "method": "manual-review",
+      "preconditions": [
+        "Owner or approved production environment available"
+      ],
+      "steps": [
+        "Run the matching UAT/release checklist and record actual result"
+      ],
+      "fixture": "Owner review or approved live website",
+      "expected": "Explicit results and owner decision",
+      "observed": "Not executed; remains open",
+      "timestamp": "2026-10-15T15:01:12.171551+00:00",
+      "mutates": false,
+      "cleanup": {
+        "strategy": "No runtime fixture created",
+        "status": "NOT_RUN"
+      },
+      "reason": "Actual browser UI 200% zoom requires owner manual UAT; equivalent reflow is not a substitute",
+      "evidence": [],
+      "assertions": []
+    },
+    {
+      "id": "MANUAL-AT",
+      "status": "BLOCKED",
+      "executed": false,
+      "references": [
+        "NFR-002"
+      ],
+      "method": "manual-review",
+      "preconditions": [
+        "Owner or approved production environment available"
+      ],
+      "steps": [
+        "Run the matching UAT/release checklist and record actual result"
+      ],
+      "fixture": "Owner review or approved live website",
+      "expected": "Explicit results and owner decision",
+      "observed": "Not executed; remains open",
+      "timestamp": "2026-10-15T15:01:12.171551+00:00",
+      "mutates": false,
+      "cleanup": {
+        "strategy": "No runtime fixture created",
+        "status": "NOT_RUN"
+      },
+      "reason": "Real assistive-technology reading requires owner manual review",
+      "evidence": [],
+      "assertions": []
+    },
+    {
+      "id": "LIVE-origin",
+      "status": "BLOCKED",
+      "executed": false,
+      "references": [
+        "NFR-003"
+      ],
+      "method": "manual-review",
+      "preconditions": [
+        "Owner or approved production environment available"
+      ],
+      "steps": [
+        "Run the matching UAT/release checklist and record actual result"
+      ],
+      "fixture": "Owner review or approved live website",
+      "expected": "Explicit results and owner decision",
+      "observed": "Not executed; remains open",
+      "timestamp": "2026-10-15T15:01:12.171551+00:00",
+      "mutates": false,
+      "cleanup": {
+        "strategy": "No runtime fixture created",
+        "status": "NOT_RUN"
+      },
+      "reason": "Publication is not authorized/executed, so live GitHub Pages verification is blocked",
+      "evidence": [],
+      "assertions": []
+    },
+    {
+      "id": "OWNER-acceptance",
+      "status": "BLOCKED",
+      "executed": false,
+      "references": [
+        "NFR-004",
+        "NFR-005"
+      ],
+      "method": "manual-review",
+      "preconditions": [
+        "Owner or approved production environment available"
+      ],
+      "steps": [
+        "Run the matching UAT/release checklist and record actual result"
+      ],
+      "fixture": "Owner review or approved live website",
+      "expected": "Explicit results and owner decision",
+      "observed": "Not executed; remains open",
+      "timestamp": "2026-10-15T15:01:12.171551+00:00",
+      "mutates": false,
+      "cleanup": {
+        "strategy": "No runtime fixture created",
+        "status": "NOT_RUN"
+      },
+      "reason": "Gate 3 acceptance, next merge and release approval await owner",
+      "evidence": [],
+      "assertions": []
+    }
+  ]
+}

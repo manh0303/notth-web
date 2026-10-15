@@ -30,3 +30,5 @@ CLI source/offline invocation: node /path/to/reviewed/notth/bin/aih.js. Registry
 Loaded Product PRD/SRS/stories/AC/traceability/document-review skills; BA/PM/PO role contracts in one host. Independent QA NOT_RUN. Recovery in docs/evidence/harness-evaluation.md.
 
 Current design scope v0.2: headline typing + future setup-video placeholder + five workflow names only; see DEC-008 and docs/design/preview-review.md. Installation/docs external; no menu/clipboard. Current evidence docs/evidence/minimal, earlier preview evidence historical. Gate 2 APPROVED in docs/product/gate-2-approval.md; main ca850a1d8c6f7ca4e7bd79b1dca58045ce89f7fc. Gate 3 pending.
+
+Production candidate: PR #3 feat/production-uat. Current evidence docs/evidence/production/README.md; GitHub CI 38755808090 passes 35 browser cases (4 visual-only skips), three mobile Lighthouse medians all 100. Owner UAT/manual zoom/AT and live production verification pending. Harness schema report intentionally BLOCKED on these gates. Node 24, Playwright 1.56.1, Lighthouse 13.5.0.

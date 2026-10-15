@@ -1,0 +1,25 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> notth-web@0.1.0 build
+> astro build
+
+23:48:46 [types] Generated 42ms
+23:48:46 [build] output: "static"
+23:48:46 [build] mode: "static"
+23:48:46 [build] directory: /workspace/scratch/192b5fb221af/notth-web/dist/
+23:48:46 [build] Collecting build info...
+23:48:46 [build] ✓ Completed in 78ms.
+23:48:46 [build] Building static entrypoints...
+23:48:46 [vite] ✓ built in 168ms
+23:48:46 [vite] ✓ built in 17ms
+23:48:46 [build] Rearranging server assets...
+
+ generating static routes 
+23:48:46   ├─ /robots.txt (+6ms) 
+23:48:46   ├─ /sitemap.xml (+1ms) 
+23:48:46   ├─ /index.html (+5ms) 
+23:48:46 ✓ Completed in 22ms.
+
+23:48:46 [build] ✓ Completed in 237ms.
+23:48:46 [build] 1 page(s) built in 316ms
+23:48:46 [build] Complete!

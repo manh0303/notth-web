@@ -1,0 +1,11 @@
+{
+  "baseline": "ca850a1d8c6f7ca4e7bd79b1dca58045ce89f7fc",
+  "tested_source": "5b0e20da07833758bc43f974c12dc7b974c8554f",
+  "artifacts": [
+    {"id":"framework","action":"unchanged","status":"done","reason":"Read-only source; approved minimal stage names and official docs remain accurate."},
+    {"id":"product","action":"update","status":"done","evidence":"docs/product/gate-2-approval.md; decision-log.md; traceability.md; docs/qa/uat-checklist.md","reason":"Record real Gate 2 approval, technical results and pending owner acceptance."},
+    {"id":"preview","action":"unchanged-design/update-export","status":"done","evidence":"tests/visual.spec.ts; docs/evidence/production/ci-playwright.json; docs/design/notth-preview.html","reason":"Approved visible composition preserved; export includes production metadata."},
+    {"id":"external-editable-ui","action":"deferred","status":"blocked","reason":"Owner approved temporary Figma/Penpot deferral. No external frame creation is claimed."},
+    {"id":"code-and-delivery","action":"update","status":"done","evidence":"src/pages; src/layouts/Base.astro; .github/workflows; docs/delivery","reason":"Static SEO, patched QA tooling, manual Pages configuration and handover."}
+  ]
+}

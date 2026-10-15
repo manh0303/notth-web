@@ -1,28 +1,36 @@
 # NOTTH Web
 
-Official website project. Astro · TypeScript · CSS · GitHub Pages.
+Official NOTTH website. Astro · TypeScript · CSS · GitHub Pages.
 
-Current stage: **Gate 1 approved; Gate 2 Figma design blocked by Starter MCP quota**. No UI baseline approved.
+**Gate 2 approved. Gate 3 owner UAT pending.** Minimal homepage: animated headline, future setup-video frame and Requirements → Design → Code → Test → Review. Figma/Penpot and the actual recording are deferred by owner decision.
 
-- [Requirements review pack](docs/product/README.md)
-- [Figma workspace](https://www.figma.com/design/eAPVui9EUPPdsQCdpfICEJ) — editable canvas verified; UI authoring quota-blocked
-- [Harness evidence and recovery](docs/evidence/harness-evaluation.md)
+## Run locally
 
-No application scaffold/build/deployment exists yet. Requirements approved. Resolve Figma access/quota, then review editable desktop/tablet/mobile designs before production UI implementation. Owner UAT and release approval remain separate.
-
-[Design proposals and blocker](docs/design/handoff.md) · [Gate 1 approval](docs/product/gate-1-approval.md)
-
-## Gate 2 browser prototype
-
-Owner approved temporarily deferring Figma/Penpot. [Review the proposal](docs/design/preview-review.md) and download [the self-contained HTML preview](docs/design/notth-preview.html) to open in a browser. Current minimal v0.2 keeps only the animated headline, future setup-media frame and five workflow stages. [Current screenshots and checks](docs/evidence/minimal/README.md); previous preview evidence is historical.
+Node 24 and npm:
 
 ```sh
 npm ci
-npm run check
-npm run build
-npx playwright install chromium
-npm run test:e2e
-node scripts/export-preview.mjs
+npm run dev
 ```
 
-Astro/TypeScript/CSS; static `/notth-web/` output. Tests start their own build fixture. `npm run dev` starts Astro for local iteration. Gate 2, owner UAT, merge and release remain pending.
+## Verify
+
+```sh
+npx playwright install --with-deps chromium firefox webkit
+npm run check
+npm run build
+npm run export:preview
+npm run test:e2e
+npm run audit:lighthouse
+npm audit
+```
+
+Browser tests start their own static-build fixture. [Portable HTML preview](docs/design/notth-preview.html) opens locally without a server. [Actual CI evidence](docs/evidence/production/README.md): 35 browser tests passed, four visual-only skips; three mobile Lighthouse runs all 100.
+
+[Requirements](docs/product/README.md) · [Approved design](docs/product/gate-2-approval.md) · [Gate 3 UAT](docs/qa/uat-checklist.md) · [Harness evaluation](docs/evidence/harness-evaluation.md).
+
+## Delivery
+
+[Release checklist](docs/delivery/release-checklist.md) · [Maintenance](docs/delivery/maintenance.md) · [Handover](docs/delivery/handover.md).
+
+Target: https://manh0303.github.io/notth-web/. CI never publishes on push. Owner must approve UAT/publication and manually dispatch the exact approved main SHA. Actual deployment and production verification remain pending.

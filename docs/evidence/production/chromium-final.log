@@ -1,0 +1,25 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+[2m[WebServer] [22m(node:79) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 13 tests using 1 worker
+
+(node:91) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:91) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [chromium] › tests/preview.spec.ts:5:3 › Minimal homepage and accessibility at 375px (775ms)
+  ✓   2 [chromium] › tests/preview.spec.ts:5:3 › Minimal homepage and accessibility at 768px (775ms)
+  ✓   3 [chromium] › tests/preview.spec.ts:5:3 › Minimal homepage and accessibility at 1440px (680ms)
+  ✓   4 [chromium] › tests/preview.spec.ts:50:1 › Headline motion preserves sequence, 500ms pause and layout (243ms)
+  ✓   5 [chromium] › tests/preview.spec.ts:82:1 › Reduced motion keeps static readable headline (118ms)
+  ✓   6 [chromium] › tests/preview.spec.ts:92:1 › Mobile keyboard navigation stays directly available (159ms)
+  ✓   7 [chromium] › tests/preview.spec.ts:126:3 › Without JavaScript › No-JS homepage keeps tagline and installation/docs links (124ms)
+  ✓   8 [chromium] › tests/preview.spec.ts:144:1 › 200% equivalent desktop reflow (99ms)
+  ✓   9 [chromium] › tests/preview.spec.ts:157:1 › Portable HTML opens offline and animates the headline (3.1s)
+  ✓  10 [chromium] › tests/preview.spec.ts:178:1 › SEO, discovery files and base-path assets (511ms)
+  ✓  11 [chromium] › tests/preview.spec.ts:205:1 › Real-time headline timing and live reduced-motion preference (3.2s)
+  ✓  12 [chromium] › tests/visual.spec.ts:3:3 › Approved Gate 2 composition 375 (262ms)
+  ✓  13 [chromium] › tests/visual.spec.ts:3:3 › Approved Gate 2 composition 1440 (462ms)
+
+  13 passed (11.7s)
