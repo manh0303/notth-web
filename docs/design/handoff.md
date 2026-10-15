@@ -1,11 +1,19 @@
-Version: 0.1 | Status: PENDING OWNER REVIEW | Owner: Nguyễn Đức Mạnh | Date: 2026-10-15
-
 # Design handoff status
 
-File: https://www.figma.com/design/eAPVui9EUPPdsQCdpfICEJ
+Gate 1: APPROVED by owner 2026-10-15; see ../product/gate-1-approval.md. Requirements v0.1 at main 28845004beed126eb72d4bbbd70c94b2835c39fa are the accepted input.
 
-Canvas page 0:1 named “00 — Gate 1 pending”. Creation, canvas read and page rename verified. No UI frames, tokens, components, responsive layouts or clickable prototype created yet. Not a finished design.
+Gate 2: NOT_READY — Figma authoring quota-blocked. No UI/frame approval requested. Gate 3: NOT_STARTED. No production code, merge or release/deployment action performed.
 
-After Gate 1: use accepted FR/NFR/US/AC IDs; build sitemap/wireframes, token/component foundations, desktop/tablet/mobile, states and motion specification. Return actual frame IDs and structural editability evidence; inspect a full-view render before Gate 2. Static logo must distinguish both t letters. Accessible name stays NOTTH; animated text is decorative. Motion sequence and timing are in SRS FR-005; extra timings/loop behavior remain proposed.
+File: https://www.figma.com/design/eAPVui9EUPPdsQCdpfICEJ . Verified current page 0:1; no UI frames, tokens/components or prototypes created. Inspect before retrying once quota is restored.
 
-Gate 2 remains pending. Production UI implementation is not started.
+Prepared proposals: screen-specification.md, foundations.md, motion-specification.md. Blocker/evidence: figma-blocker.md, figma-state.json and ../evidence/figma-quota.json. Palette contrast report is math only, not design/runtime accessibility proof.
+
+| Planned screen | Requirements | Actual Figma node | Component / test |
+| --- | --- | --- | --- |
+| SCR-001 desktop 1440 | FR-001–005, NFR-001/002/004 | BLOCKED | pending / NOT_RUN |
+| SCR-002 tablet 768 | FR-001–005, NFR-001/002/004 | BLOCKED | pending / NOT_RUN |
+| SCR-003 mobile 375 | FR-001–005, NFR-001/002/004 | BLOCKED | pending / NOT_RUN |
+| SCR-004 mobile menu open | FR-004, NFR-001/002 | BLOCKED | pending / NOT_RUN |
+| SCR-005 reduced motion | FR-005, NFR-002 | BLOCKED | pending / NOT_RUN |
+
+Design skeleton/motion authoring scripts must be treated as unexecuted proposals until actual connected tool execution returns IDs. Code Connect is deferred until actual production Astro component paths exist; no fabricated map.

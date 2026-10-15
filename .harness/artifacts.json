@@ -19,11 +19,12 @@
       },
       "capability": "product",
       "canonical": true,
-      "status": "draft",
+      "status": "approved",
       "owner": "project-owner",
       "sources": [
         "framework"
-      ]
+      ],
+      "revision": "gate1-main-28845004beed126eb72d4bbbd70c94b2835c39fa"
     },
     "ui": {
       "kind": "design",

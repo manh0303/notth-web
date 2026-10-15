@@ -1,0 +1,36 @@
+{
+  "runId": "notth-web-design-20261015",
+  "scope": "website with brand foundations and reusable component inventory",
+  "stage": "authoring-blocked",
+  "fileKey": "eAPVui9EUPPdsQCdpfICEJ",
+  "approvedInput": "28845004beed126eb72d4bbbd70c94b2835c39fa",
+  "entities": {
+    "pages": {
+      "initial": {
+        "id": "0:1",
+        "name": "00 \u2014 Gate 1 pending"
+      }
+    },
+    "frames": {},
+    "collections": {},
+    "variables": {},
+    "styles": {},
+    "components": {}
+  },
+  "completed": [
+    "gate1-owner-approval",
+    "canvas-inspection",
+    "fonts-inspection",
+    "get-libraries",
+    "screen-specifications-proposed",
+    "motion-specification-proposed"
+  ],
+  "blocked": [
+    "search-design-system",
+    "foundations-write",
+    "all-editable-ui-authoring"
+  ],
+  "next": "Restore permitted quota/access, inspect existing canvas, complete discovery, author and verify editable designs.",
+  "gate2": "not-ready",
+  "gate3": "not-started"
+}

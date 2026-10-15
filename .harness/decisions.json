@@ -22,11 +22,20 @@
     {
       "id": "mvp-language",
       "scope": "project",
-      "status": "proposed",
+      "status": "confirmed",
       "question": "Initial content language and documentation scope?",
       "answer": "English homepage; official docs remain in framework repo.",
-      "reason": "Minimal initial product scope.",
-      "source": "docs/product/prd.md"
+      "reason": "Owner approved Gate 1 and merged baseline PR #1.",
+      "source": "docs/product/gate-1-approval.md"
+    },
+    {
+      "id": "gate-1-approved",
+      "scope": "project",
+      "status": "confirmed",
+      "question": "May visual design begin?",
+      "answer": "Owner approved requirements v0.1 and merged PR #1. Gate 2/3 and release are not approved.",
+      "reason": "Explicit owner message and observed merge.",
+      "source": "docs/product/gate-1-approval.md"
     }
   ]
 }

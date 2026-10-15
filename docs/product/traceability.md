@@ -18,3 +18,7 @@ Version: 0.1 | Status: PENDING OWNER REVIEW | Owner: Nguyễn Đức Mạnh | Da
 Coverage: 10/10 FR/NFR requirements have source/proposal labeling, stories and AC links. 8 stories, 16 acceptance criteria. Human approvals: 0. Actual UI frames/component/test mappings: 0/10. The Figma file exists but has no UI frame; its page ID is not a design acceptance reference. Implementation/OpenSpec mappings pending Gate 1 and design approval. No completed runtime coverage claimed.
 
 IDs remain stable. Record code/test revisions and raw evidence paths when available; invalidate affected evidence after change. Requirements review is a same-agent static review, not independent QA or UAT.
+
+## Gate 1 update — 2026-10-15
+
+Owner approved requirements v0.1; see gate-1-approval.md. Earlier pending statuses above are the historical draft snapshot. Current FR/NFR baseline approval: 10/10 at Gate 1. Actual Figma UI node/component/executed test mappings remain 0/10, quota-blocked. Prepared screen mapping is in ../design/handoff.md. Gate 2/3 acceptance not granted.

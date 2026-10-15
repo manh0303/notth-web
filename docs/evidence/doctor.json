@@ -40,19 +40,27 @@
         "answer": "Owner approves requirements before design, design before production UI completion, UAT before acceptance; no auto-merge or auto-release.",
         "reason": "Explicit owner gates.",
         "source": "docs/product/decision-log.md"
-      }
-    ],
-    "proposed": [
+      },
       {
         "id": "mvp-language",
         "scope": "project",
-        "status": "proposed",
+        "status": "confirmed",
         "question": "Initial content language and documentation scope?",
         "answer": "English homepage; official docs remain in framework repo.",
-        "reason": "Minimal initial product scope.",
-        "source": "docs/product/prd.md"
+        "reason": "Owner approved Gate 1 and merged baseline PR #1.",
+        "source": "docs/product/gate-1-approval.md"
+      },
+      {
+        "id": "gate-1-approved",
+        "scope": "project",
+        "status": "confirmed",
+        "question": "May visual design begin?",
+        "answer": "Owner approved requirements v0.1 and merged PR #1. Gate 2/3 and release are not approved.",
+        "reason": "Explicit owner message and observed merge.",
+        "source": "docs/product/gate-1-approval.md"
       }
     ],
+    "proposed": [],
     "superseded": [],
     "note": "Recorded decisions are project context, not permissions. Reuse only while scope and sources remain applicable; changed evidence can require reconsideration, even with do_not_ask_again."
   },
@@ -93,10 +101,10 @@
           "path": "docs/product"
         },
         "owner": "project-owner",
-        "revision": null,
+        "revision": "gate1-main-28845004beed126eb72d4bbbd70c94b2835c39fa",
         "capability": "product",
         "canonical": true,
-        "status": "draft",
+        "status": "approved",
         "write_policy": "propose",
         "sources": [
           "framework"

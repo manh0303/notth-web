@@ -1,0 +1,48 @@
+{
+  "method": "sRGB relative luminance / WCAG contrast ratio",
+  "scope": "Proposed flat palette math only; no rendered Figma/browser evidence",
+  "pairs": [
+    {
+      "foreground": "text",
+      "background": "canvas",
+      "contrastRatio": 18.06,
+      "normalTextAA": true
+    },
+    {
+      "foreground": "muted",
+      "background": "canvas",
+      "contrastRatio": 9.28,
+      "normalTextAA": true
+    },
+    {
+      "foreground": "muted",
+      "background": "surface",
+      "contrastRatio": 8.7,
+      "normalTextAA": true
+    },
+    {
+      "foreground": "violet",
+      "background": "canvas",
+      "contrastRatio": 9.0,
+      "normalTextAA": true
+    },
+    {
+      "foreground": "violetBright",
+      "background": "canvas",
+      "contrastRatio": 11.74,
+      "normalTextAA": true
+    },
+    {
+      "foreground": "buttonInk",
+      "background": "violet",
+      "contrastRatio": 8.37,
+      "normalTextAA": true
+    },
+    {
+      "foreground": "focus",
+      "background": "surface",
+      "contrastRatio": 11.85,
+      "normalTextAA": true
+    }
+  ]
+}

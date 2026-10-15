@@ -38,3 +38,15 @@ Pending work: all Figma design artifacts; technical design/ADRs; Astro implement
 - `doctor`: status ok, no configuration problems; raw report doctor.json. Presence/configuration inspection only, not app QA.
 - `seed --record` then `seed --check`: current, no changed declared sources; raw reports seed-record.json and seed-check.json. Only declared local source freshness established.
 - One draft artifact-config validation failed (`Invalid write policy: inputs/framework`) after using `read`; corrected to documented `read-only`, then check/doctor passed. No framework files modified.
+
+## Gate 1 continuation — 2026-10-15
+
+Owner said “oke đã merge gate 1”; PR #1 merge confirmed at main 28845004beed126eb72d4bbbd70c94b2835c39fa. Prior Gate 1 pending statements above are historical; requirements v0.1 are now owner approved.
+
+Loaded installed UIUX requirements-analysis/user-flow/screen-planning/design-system/figma-design/design-review and docs-to-figma instructions; reused accepted IDs and destinations. Loaded Figma use/generate-design/generate-library/use-motion skills and relevant authoring references.
+
+Actual Figma canvas inspection succeeded; fonts and subscribed libraries retrieved. Search hit Starter MCP limit. whoami confirmed Starter/View. Official rate-limit docs describe write exemptions; one authorized use_figma foundations write was attempted and also quota-blocked. No created object IDs returned. Detailed evidence in figma-quota.json; no editable UI created. No retries/bypass after write rejection.
+
+Prepared screen inventory, responsive/state plan, proposed brand foundations and motion choreography in docs/design. Proposed palette contrast was calculated; this is math only. Design-system asset search incomplete; no assertion that libraries are empty. Figma authoring and visual/prototype validation BLOCKED. Production code/browser QA/UAT/deployment NOT_RUN.
+
+Current checkpoint: feat/figma-design-baseline; Gate 2 not ready. Next executable action requires restored permitted Figma quota/access. Read docs/design/figma-state.json and figma-blocker.md, inspect actual file before retrying; then author/verify editable designs and request owner Gate 2 approval. Requirements approval need not be requested again. No framework modifications, merge or release.
