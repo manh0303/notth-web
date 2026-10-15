@@ -9,3 +9,9 @@ site/base remain https://manh0303.github.io + /notth-web/. npm run check, npm ru
 Decisions: preserve owner-selected static Astro architecture; simplify to the owner-directed page in docs/design/preview-review.md. Official installation/docs stay external. No new dependency or infrastructure for this revision. Future setup clip is deferred, not simulated.
 
 Production phase after Gate 2: complete applicable QA/Lighthouse, sitemap/robots, CI and specifically authorized GitHub Pages deployment, then owner UAT/release approval. No deployment workflow currently enabled.
+
+## Production hardening after Gate 2
+
+Gate 2 is approved at ca850a1d8c6f7ca4e7bd79b1dca58045ce89f7fc. Static build-time sitemap.xml/robots.txt routes, canonical/OG/Twitter metadata and a local social card complete discovery metadata without an integration dependency. Approved visible composition is unchanged and compared against Gate 2 screenshots.
+
+CI checks Node 24/npm lockfile, audit, Astro types/build, 3 browser engines and three mobile Lighthouse runs, retaining reports. Pages workflow is dispatch-only for owner/main/approved commit and UAT reference, calls verification, uploads dist and deploys with job-scoped Pages/OIDC permissions. No backend or automatic push release. See delivery/release-checklist.md; deployment and production verification remain pending owner authorization.

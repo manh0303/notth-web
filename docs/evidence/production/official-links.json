@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-10-15T14:56:51.316699+00:00",
+  "method": "Python urllib GET, default TLS validation",
+  "results": [
+    {
+      "url": "https://github.com/manh0303/notth",
+      "status": 200,
+      "final_url": "https://github.com/manh0303/notth",
+      "verified": true
+    },
+    {
+      "url": "https://github.com/manh0303/notth/tree/main/docs",
+      "status": 200,
+      "final_url": "https://github.com/manh0303/notth/tree/main/docs",
+      "verified": true
+    },
+    {
+      "url": "https://github.com/manh0303/notth/blob/main/docs/getting-started.md",
+      "status": 200,
+      "final_url": "https://github.com/manh0303/notth/blob/main/docs/getting-started.md",
+      "verified": true
+    },
+    {
+      "url": "https://github.com/manh0303/notth/blob/main/LICENSE",
+      "status": 200,
+      "final_url": "https://github.com/manh0303/notth/blob/main/LICENSE",
+      "verified": true
+    }
+  ]
+}

@@ -2,7 +2,7 @@ import { createServer } from 'node:http';
 import { readFile } from 'node:fs/promises';
 import { resolve, extname } from 'node:path';
 const root = resolve('dist');
-const types = {'.html':'text/html','.css':'text/css','.js':'text/javascript','.svg':'image/svg+xml','.woff2':'font/woff2','.woff':'font/woff'};
+const types = {'.html':'text/html','.css':'text/css','.js':'text/javascript','.svg':'image/svg+xml','.woff2':'font/woff2','.woff':'font/woff','.png':'image/png','.xml':'application/xml','.txt':'text/plain'};
 createServer(async (req, res) => {
   const pathname = new URL(req.url, 'http://localhost').pathname;
   if (!pathname.startsWith('/notth-web/')) { res.writeHead(404).end(); return; }

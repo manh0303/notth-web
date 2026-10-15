@@ -68,3 +68,13 @@ Final validation note: adding tests exposed missing Node typings and mixed Playw
 ## Minimal revision checkpoint — DEC-008
 
 Owner requested an extreme simplification. Reused Header/Wordmark/BrandMotion and Astro layout; moved animation into h1, replaced logo box with explicit future video placeholder, removed Install/clipboard/menu and unused CSS, retained five workflow labels. Updated current design/architecture/AC/traceability with scope delta rather than silently claiming the old requirements still apply. No new dependency. Current actual evidence: minimal/README.md (9/9 browser tests, typecheck/build). Gate 2 remains pending; PR #2 is the review destination. Next: owner reviews minimal prototype. No merge/deployment/release.
+
+## Production / Gate 3 checkpoint — 2026-10-15
+
+Gate 2 explicitly approved by owner; PR #2 merge ca850a1d8c6f7ca4e7bd79b1dca58045ce89f7fc verified. New feature branch feat/production-uat and PR #3. Harness 0.17.0 snapshot remains unchanged; framework repo never modified. Loaded Astro SEO/performance/deployment, verification/end-user-testing, delivery planning and sequential review guidance. Continued through approved design without a second requirements interview.
+
+Added static discovery/social metadata, pinned patched QA tools, owner-initiated Pages workflow and CI. Local browser library/page-creation failures recorded and not relabeled PASS; supported GitHub runner resolves coverage. Actual run 38755808090: npm audit/check/build, 35 browser tests passed, four explicit visual-only skips, three Lighthouse mobile runs all 100. Downloaded artifact digest verified and retained in production/ci-qa.zip. Harness schema-1 report validated and correctly returns BLOCKED for manual zoom/AT, owner UAT and undeployed production surface. Host/runtime token/quota usage remains unknown; no fabricated savings or independent QA claims.
+
+Evaluation: Harness supports source-linked gates/recovery/evidence contracts but does not run tests or authenticate owner approval. Existing report validation is useful for preserving pending acceptance alongside technical passes. Installation/browser package issues are host limitations; GitHub runner recovery was exercised. CI/owner-only/manual SHA guard protects against accidental push-triggered release, but owner UAT reference is still an attestation and environment protection must be configured by repository owner.
+
+Next: owner completes docs/qa/uat-checklist.md (manual 200% zoom and assistive reading pending) and accepts or requests changes for Gate 3. Merge/publication require separate authorization. Production verification remains NOT_RUN. PR #3 contains source/config/evidence/handover; no release completion claim.

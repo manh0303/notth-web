@@ -1,0 +1,329 @@
+{
+  "source_head": "5b0e20da07833758bc43f974c12dc7b974c8554f",
+  "run_id": 38755808090,
+  "run_url": "https://github.com/manh0303/notth-web/actions/runs/38755808090",
+  "artifact_id": 11983637035,
+  "artifact_sha256": "31fca1ad7c577fba23d0914867aef17ec20a38915744a1209dce8ce3bc97cf79",
+  "stats": {
+    "startTime": "2026-10-15T14:57:27.412Z",
+    "duration": 53315.772,
+    "expected": 35,
+    "skipped": 4,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "title": "Minimal homepage and accessibility at 375px",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Minimal homepage and accessibility at 768px",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Minimal homepage and accessibility at 1440px",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Headline motion preserves sequence, 500ms pause and layout",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Reduced motion keeps static readable headline",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Mobile keyboard navigation stays directly available",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "200% equivalent desktop reflow",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Portable HTML opens offline and animates the headline",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "SEO, discovery files and base-path assets",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Real-time headline timing and live reduced-motion preference",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Minimal homepage and accessibility at 375px",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Minimal homepage and accessibility at 768px",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Minimal homepage and accessibility at 1440px",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Headline motion preserves sequence, 500ms pause and layout",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Reduced motion keeps static readable headline",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Mobile keyboard navigation stays directly available",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "200% equivalent desktop reflow",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Portable HTML opens offline and animates the headline",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "SEO, discovery files and base-path assets",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Real-time headline timing and live reduced-motion preference",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Minimal homepage and accessibility at 375px",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Minimal homepage and accessibility at 768px",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Minimal homepage and accessibility at 1440px",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Headline motion preserves sequence, 500ms pause and layout",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Reduced motion keeps static readable headline",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Mobile keyboard navigation stays directly available",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "200% equivalent desktop reflow",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Portable HTML opens offline and animates the headline",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "SEO, discovery files and base-path assets",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Real-time headline timing and live reduced-motion preference",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "No-JS homepage keeps tagline and installation/docs links",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "No-JS homepage keeps tagline and installation/docs links",
+      "project": "firefox",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "No-JS homepage keeps tagline and installation/docs links",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Approved Gate 2 composition 375",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Approved Gate 2 composition 1440",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Approved Gate 2 composition 375",
+      "project": "firefox",
+      "status": "skipped",
+      "results": [
+        "skipped"
+      ]
+    },
+    {
+      "title": "Approved Gate 2 composition 1440",
+      "project": "firefox",
+      "status": "skipped",
+      "results": [
+        "skipped"
+      ]
+    },
+    {
+      "title": "Approved Gate 2 composition 375",
+      "project": "webkit",
+      "status": "skipped",
+      "results": [
+        "skipped"
+      ]
+    },
+    {
+      "title": "Approved Gate 2 composition 1440",
+      "project": "webkit",
+      "status": "skipped",
+      "results": [
+        "skipped"
+      ]
+    }
+  ]
+}

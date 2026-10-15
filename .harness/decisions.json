@@ -54,6 +54,15 @@
       "answer": "Owner requests headline typing animation, future setup-media placeholder and only the five workflow stage names below. Install becomes official docs link; reduced/no-JS headline is static final tagline. Gate 2 approval pending.",
       "reason": "Explicit owner feedback on the v0.1 preview.",
       "source": "docs/product/decision-log.md DEC-008"
+    },
+    {
+      "id": "gate-2-approved",
+      "scope": "project",
+      "status": "confirmed",
+      "question": "May production hardening and QA proceed?",
+      "answer": "Owner approved minimal v0.2 design by merging PR #2; observed main ca850a1d8c6f7ca4e7bd79b1dca58045ce89f7fc. Proceed to production/QA/UAT preparation, not owner acceptance or publication.",
+      "reason": "Owner message plus confirmed GitHub merge.",
+      "source": "docs/product/gate-2-approval.md"
     }
   ]
 }

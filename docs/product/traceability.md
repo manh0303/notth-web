@@ -37,3 +37,9 @@ Owner approved requirements v0.1; see gate-1-approval.md. Earlier pending status
 | NFR-004/005 | preview-review.md, source, minimal evidence, gates | External designs deferred; owner review/UAT/release pending |
 
 Current reports: ../evidence/minimal/. v0.1 preview evidence remains historical. Future setup video is deferred, not delivered. Browser refs SCR-001/002/003 are in screen-specification.md; no Figma frames claimed.
+
+## Production / Gate 3 candidate
+
+Gate 2 minimal mapping above is approved (gate-2-approval.md); pending wording describes its proposal phase. Stable AC results and owner approval status now live in ../qa/uat-checklist.md (UAT-01–16). Current tests: tests/preview.spec.ts + visual.spec.ts. Current runtime/raw evidence: ../evidence/production. Approved Chromium screenshots are the visual regression baseline; no external frame IDs are invented.
+
+NFR-003 now includes static sitemap/robots/social metadata and three-run Lighthouse. NFR-005 maps .github/workflows/{ci,pages}.yml and release checklist. Deployed-origin checks are NOT_RUN pending publication. Unexecuted manual zoom/AT and cross-browser limitations must remain explicit; owner UAT acceptance is never populated from automated results.

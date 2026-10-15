@@ -1,0 +1,12 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> notth-web@0.1.0 check
+> astro check
+
+23:53:15 [types] Generated 47ms
+23:53:15 [check] Getting diagnostics for Astro files in /workspace/scratch/192b5fb221af/notth-web...
+Result (15 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+

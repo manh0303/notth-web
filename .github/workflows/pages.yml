@@ -1,0 +1,48 @@
+name: Publish approved website
+on:
+  workflow_dispatch:
+    inputs:
+      approved-commit:
+        description: Full main SHA approved for publication
+        required: true
+        type: string
+      uat-reference:
+        description: Link to the owner's Gate 3 approval
+        required: true
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  approval:
+    if: github.actor == github.repository_owner && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Require the explicitly approved main revision and UAT reference
+        env:
+          APPROVED_COMMIT: ${{ inputs.approved-commit }}
+          UAT_REFERENCE: ${{ inputs.uat-reference }}
+        run: |
+          test "$APPROVED_COMMIT" = "$GITHUB_SHA"
+          test -n "$UAT_REFERENCE"
+  verify:
+    needs: approval
+    uses: ./.github/workflows/ci.yml
+    with:
+      pages-artifact: true
+  deploy:
+    needs: verify
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+      - name: Deploy reviewed artifact
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5

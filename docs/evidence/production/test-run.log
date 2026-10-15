@@ -1,0 +1,20 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> notth-web@0.1.0 test:e2e
+> playwright test
+
+[2m[WebServer] [22m(node:175) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 27 tests using 1 worker
+
+(node:187) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:187) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [chromium] › tests/preview.spec.ts:5:3 › Minimal homepage and accessibility at 375px (713ms)
+  ✓   2 [chromium] › tests/preview.spec.ts:5:3 › Minimal homepage and accessibility at 768px (695ms)
+  ✓   3 [chromium] › tests/preview.spec.ts:5:3 › Minimal homepage and accessibility at 1440px (696ms)
+  ✓   4 [chromium] › tests/preview.spec.ts:50:1 › Headline motion preserves sequence, 500ms pause and layout (286ms)
+  ✓   5 [chromium] › tests/preview.spec.ts:82:1 › Reduced motion keeps static readable headline (122ms)
+  ✓   6 [chromium] › tests/preview.spec.ts:92:1 › Mobile keyboard navigation stays directly available (173ms)

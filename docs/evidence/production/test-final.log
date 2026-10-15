@@ -1,0 +1,51 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> notth-web@0.1.0 test:e2e
+> playwright test
+
+[2m[WebServer] [22m(node:91) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 39 tests using 1 worker
+
+(node:103) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:103) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [chromium] › tests/preview.spec.ts:5:3 › Minimal homepage and accessibility at 375px (757ms)
+  ✓   2 [chromium] › tests/preview.spec.ts:5:3 › Minimal homepage and accessibility at 768px (682ms)
+  ✓   3 [chromium] › tests/preview.spec.ts:5:3 › Minimal homepage and accessibility at 1440px (649ms)
+  ✓   4 [chromium] › tests/preview.spec.ts:50:1 › Headline motion preserves sequence, 500ms pause and layout (235ms)
+  ✓   5 [chromium] › tests/preview.spec.ts:82:1 › Reduced motion keeps static readable headline (126ms)
+  ✓   6 [chromium] › tests/preview.spec.ts:92:1 › Mobile keyboard navigation stays directly available (141ms)
+  ✓   7 [chromium] › tests/preview.spec.ts:126:3 › Without JavaScript › No-JS homepage keeps tagline and installation/docs links (114ms)
+  ✓   8 [chromium] › tests/preview.spec.ts:144:1 › 200% equivalent desktop reflow (106ms)
+  ✓   9 [chromium] › tests/preview.spec.ts:157:1 › Portable HTML opens offline and animates the headline (3.0s)
+  ✓  10 [chromium] › tests/preview.spec.ts:178:1 › SEO, discovery files and base-path assets (458ms)
+  ✓  11 [chromium] › tests/preview.spec.ts:205:1 › Real-time headline timing and live reduced-motion preference (3.0s)
+  ✓  12 [chromium] › tests/visual.spec.ts:3:3 › Approved Gate 2 composition 375 (177ms)
+  ✓  13 [chromium] › tests/visual.spec.ts:3:3 › Approved Gate 2 composition 1440 (241ms)
+(node:372) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:372) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  14 [firefox] › tests/preview.spec.ts:5:3 › Minimal homepage and accessibility at 375px (15.0s)
+(node:540) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:540) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  15 [firefox] › tests/preview.spec.ts:5:3 › Minimal homepage and accessibility at 768px (15.0s)
+(node:712) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:712) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  16 [firefox] › tests/preview.spec.ts:5:3 › Minimal homepage and accessibility at 1440px (15.0s)
+(node:883) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:883) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  17 [firefox] › tests/preview.spec.ts:50:1 › Headline motion preserves sequence, 500ms pause and layout (15.0s)
+(node:1053) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1053) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
