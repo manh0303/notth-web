@@ -3,21 +3,21 @@
   "context_hashes": {
     ".harness/agents.json": "2a4af46ee8d252315dd09905688857c9e191b13cf4d91c39afca67dd707912fd",
     ".harness/artifacts.json": "26c32da5e8dd1562943df5e46a8c2daf63e21ed6e4d9771bebf3db596748f18c",
-    ".harness/decisions.json": "676c50524ec121db3bc24c922c8f0faa009b3e866e55a86cca45f3944123733c",
+    ".harness/decisions.json": "b3022b0ed8f2f5c3b1b061b8d3beed9516cf3ff59aba87afe8218f1d9c8151cf",
     ".harness/environment.json": "d14d43fb6036b6e3f78c72fdc2eb877318e4e6e59059fcf184f7b4a7806004fd",
     ".harness/integrations.json": "a61fda8e3afccd8946da825ead3fa8dd71084c9c648b195db3205f674a817a17",
-    ".harness/local.md": "7c51df88e4256ca2e0f25a6b3b1dfab1310b2b529bed276c5202c03c3698e170"
+    ".harness/local.md": "036934c15b2f5b71a3bf81bc1fbf2cbe7f8742cec5124ff544a63f5ac7b89520"
   },
-  "knowledge_hash": "cab493cfaab18c347533a103394b48b2528d6e0a659b7100c43fa364f6058b68",
+  "knowledge_hash": "d7d8e8f51d406448de79044c0cdad454d3aa3c43cc52b79ae60192877bf255f1",
   "schema_version": 1,
   "source_hashes": {
     "AGENTS.md": "874a3030498500f499b5908089e227dd3e4230b339b3395e9fa45f8c20071941",
-    "README.md": "2a395ceb0254cae433145103f3f4972cba0d4e621cc8f1f3530c2020e6cc79dd",
+    "README.md": "d77303aff0b4c0a040c57fde273307d4833cea32343f5f098c6598d3e317b62f",
     "docs/evidence/minimal/README.md": "ab66de279bc44560e2cfc77b28f0ac45326f1be7f427abbf66484f99b186ff5e",
     "docs/evidence/preview/README.md": "17c9313cfc57c03582a48ea16d8a3571671322afccc0ef6482e56a12f9ae50ea",
     "docs/evidence/production/README.md": "6b380f997070b1d765ef6b96f471d805a6f38d8189aa3179d1d9e8be7b9213db",
-    "docs/product/README.md": "617f668af123c029f10d698e21941ad7119b549625ee1e03d9e923c31adbdd56",
-    "docs/product/decision-log.md": "8dfe324ed55d42f6f8670abeeefc0b5f9c28a94ecd6e7b6fd232b7b04f969778",
+    "docs/product/README.md": "126d775630175d667c78468b872236f38532818d9833199f5029de8ba08b3ded",
+    "docs/product/decision-log.md": "45adb6708160dc8e0cb533c83a63b1904fecf5d118d807e06f1943c4e6583b5b",
     "docs/product/source-register.md": "fd9cd6b6b948625414a9e3d4839994400a6832ebd5f8536e8b97080a7f9e0a78",
     "docs/product/srs.md": "88499869996e90725c859d262781a5671fe491791e70a52aa97dc8e6da05dd4a",
     "package.json": "c9fbc93ddddcd57c772590421f43b7861f1c082ce1afc96b719a1147a0092719"

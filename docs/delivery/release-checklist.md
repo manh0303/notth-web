@@ -1,8 +1,8 @@
 # Release checklist — owner approval required
 
 - [x] Gate 1 requirements and Gate 2 minimal design approved/merged.
-- [ ] Gate 3 UAT checklist reviewed and explicitly accepted by owner, including remaining manual cases/limitations.
-- [ ] Production PR CI green at reviewed SHA; owner merges.
+- [x] Gate 3 owner approval recorded in ../product/gate-3-approval.md; manual zoom/assistive-tech evidence gaps remain explicit.
+- [x] Production PR #3 CI green and merge observed at main 7ea9812ea4e7d88baa7333d171568bcc830185a1.
 - [ ] Confirm repository plan/visibility supports Pages and Settings → Pages → Source is GitHub Actions.
 - [ ] Review github-pages environment restrictions; enable owner required review if supported by repository plan.
 - [ ] Owner explicitly approves publication of full main SHA and records Gate 3 approval URL.

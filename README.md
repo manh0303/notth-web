@@ -2,7 +2,7 @@
 
 Official NOTTH website. Astro · TypeScript · CSS · GitHub Pages.
 
-**Gate 2 approved. Gate 3 owner UAT pending.** Minimal homepage: animated headline, future setup-video frame and Requirements → Design → Code → Test → Review. Figma/Penpot and the actual recording are deferred by owner decision.
+**Gates 1–3 approved. Publication pending.** Minimal homepage: animated headline, future setup-video frame and Requirements → Design → Code → Test → Review. Figma/Penpot and the actual recording are deferred by owner decision.
 
 ## Run locally
 
@@ -33,4 +33,4 @@ Browser tests start their own static-build fixture. [Portable HTML preview](docs
 
 [Release checklist](docs/delivery/release-checklist.md) · [Maintenance](docs/delivery/maintenance.md) · [Handover](docs/delivery/handover.md).
 
-Target: https://manh0303.github.io/notth-web/. CI never publishes on push. Owner must approve UAT/publication and manually dispatch the exact approved main SHA. Actual deployment and production verification remain pending.
+Target: https://manh0303.github.io/notth-web/. CI never publishes on push. Owner UAT is approved in docs/product/gate-3-approval.md. Publication still needs explicit approval and manual dispatch of the exact approved main SHA. Actual deployment and production verification remain pending.
