@@ -10,7 +10,7 @@
     "docs/product/source-register.md",
     "docs/product/srs.md"
   ],
-  "knowledge_hash": "d4de9fda7184cecd59d598ceeb846e21efa92b5c951036e4f0b8e76a913530f2",
+  "knowledge_hash": "a17f47818fa9016e25409d0b4cb584a005bcf0062b67f243ba524300c2a764fb",
   "note": "Local declared-source freshness only; remote revisions and facts remain host-verified. Summaries do not override scoped instructions.",
   "freshness": "current",
   "next_steps": [

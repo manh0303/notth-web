@@ -1,11 +1,11 @@
-Version: 0.1 | Status: PENDING OWNER REVIEW | Owner: Nguyễn Đức Mạnh | Date: 2026-10-15
+# Minimal design handoff v0.2
 
-# Design handoff status
+Gate 2 pending. Owner requested the simpler composition documented in preview-review.md.
 
-File: https://www.figma.com/design/eAPVui9EUPPdsQCdpfICEJ
+Editable source: src/pages/index.astro, src/components/{Header,Wordmark,BrandMotion}.astro, src/styles/global.css. Run npm ci, npm run dev. Build and export: npm run build, node scripts/export-preview.mjs. Portable review artifact: notth-preview.html.
 
-Canvas page 0:1 named “00 — Gate 1 pending”. Creation, canvas read and page rename verified. No UI frames, tokens, components, responsive layouts or clickable prototype created yet. Not a finished design.
+The media frame is only a future setup-video placeholder. Add a real reviewed recording later with a poster, dimensions, accessible controls/captions as relevant and reduced-motion behavior; do not invent a recording. Installation is currently an official documentation link. Removed Install component and all unused CSS/clipboard/menu logic.
 
-After Gate 1: use accepted FR/NFR/US/AC IDs; build sitemap/wireframes, token/component foundations, desktop/tablet/mobile, states and motion specification. Return actual frame IDs and structural editability evidence; inspect a full-view render before Gate 2. Static logo must distinguish both t letters. Accessible name stays NOTTH; animated text is decorative. Motion sequence and timing are in SRS FR-005; extra timings/loop behavior remain proposed.
+Requirement changes: FR-002 stage names only; FR-003 external setup guide; FR-005 animation now in h1, reduced/no-JS tagline is static “nothing”. See product decision log and traceability. Current executed checks: ../evidence/minimal/README.md. Prior v0.1 evidence is historical.
 
-Gate 2 remains pending. Production UI implementation is not started.
+No editable Figma/Penpot output, owner design approval, production acceptance, merge or deployment is claimed.

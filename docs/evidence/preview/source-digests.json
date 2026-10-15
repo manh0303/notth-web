@@ -1,0 +1,18 @@
+{
+  "src/styles/global.css": "6337fd28e455561d34bc357feea2d7284a7f277b808b5b12fdfde860554d8aa6",
+  "src/layouts/Base.astro": "1ae92e186ed9e0d2a213580fbdae181dcb0c9f33e3cea9c3060b2780b6216d1e",
+  "src/pages/index.astro": "220ba9f550c3e1bde4fd50aab20d57dfbc2d45b8d7e454f52083ead4b3826b81",
+  "src/components/Install.astro": "fcb4d541f54dd609ab99bf44a8e700c4c9871cdeaada84f1d7eb6274890604c0",
+  "src/components/Wordmark.astro": "34d2ae536bada1d1225c4fe817bf670d8ab65c23cd411052384fe00df8233406",
+  "src/components/Header.astro": "223d011d24317a320917b644145e2a1d59b19e100af428b599dcb9c2d4ab2175",
+  "src/components/BrandMotion.astro": "5558d1a742e7de9443e41934259411d3e6542c67c7bbf0a2a803d0aa0042d2e9",
+  "package.json": "95671f08ca219e795f9fbd0e52b5864eb39339bfc2f240871fc5f419124e4778",
+  "package-lock.json": "fa2842a53770cf356ba60ad027735deadbcc2d0dbc3a04d0e1af5a5a030e6f1c",
+  "astro.config.mjs": "6e7f3780f6b4842d24261b53b87b92189cf0a455ae01ee9ec255fd39008b47d7",
+  "playwright.config.ts": "c62d06f707bad440ca2ffde4f8ce2ff17c4bfe823123de5aa811200b75ebf42a",
+  "tests/preview.spec.ts": "b099b0d8574f2154fdd26473fd47b3c1404a43d739b6adc0222a5fa4a9325d9c",
+  "scripts/serve-build.mjs": "2bf517700860dfed6a9289afd22c66c53f1183320d2ec74f727e95db6c38039f",
+  "scripts/export-preview.mjs": "04d16a82c7b152a62ed082c1e860444898e8d7a14f82ac24b47dbc35922f3bdb",
+  "docs/design/notth-preview.html": "c1778199c9e556dc085ee26124faaf4343178d7631cf3056b3bf1d74879fc30f",
+  "public/font-licenses.txt": "78358a06d6a1a5465d40fd0c32199557949670b9b892e841487d6c5f5361ff9e"
+}

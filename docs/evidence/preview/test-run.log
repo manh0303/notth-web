@@ -1,0 +1,27 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> notth-web@0.1.0 test:e2e
+> playwright test
+
+[2m[WebServer] [22m(node:32) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 11 tests using 1 worker
+
+(node:44) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:44) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/preview.spec.ts:5:3 › FR-001/002/004 NFR-001/002/003 layout 375 (1.3s)
+  ✓  2 tests/preview.spec.ts:5:3 › FR-001/002/004 NFR-001/002/003 layout 768 (1.2s)
+  ✓  3 tests/preview.spec.ts:5:3 › FR-001/002/004 NFR-001/002/003 layout 1440 (1.3s)
+  ✓  4 tests/preview.spec.ts:23:1 › FR-005 exact motion sequence, 500ms pause, stable bounds (314ms)
+  ✓  5 tests/preview.spec.ts:37:1 › FR-005 reduced motion remains static (187ms)
+  ✓  6 tests/preview.spec.ts:42:1 › FR-004 NFR-002 mobile menu keyboard and Escape (412ms)
+  ✓  7 tests/preview.spec.ts:51:1 › FR-003 copy failure and selectable source command (253ms)
+  ✓  8 tests/preview.spec.ts:57:1 › FR-003 real clipboard success (193ms)
+  ✓  9 tests/preview.spec.ts:63:1 › FR-004/005 no JavaScript keeps essential navigation and brand (212ms)
+  ✓  10 tests/preview.spec.ts:71:1 › NFR-001 200% equivalent desktop reflow (152ms)
+  ✓  11 tests/preview.spec.ts:76:1 › Gate 2 portable HTML opens offline with responsive design and animation (3.2s)
+
+  11 passed (10.0s)

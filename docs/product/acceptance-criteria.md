@@ -101,3 +101,7 @@ Linked requirements: NFR-004, NFR-005
 **Given** Gate 3 and release approval are absent. **When** delivery reaches a gated action. **Then** no auto-merge/release or acceptance claim occurs; checkpoint, remaining work and next executable action exist.
 
 Permission/auth/data concurrency cases are not applicable to this public static, non-input product. Review gates still require owner authorization. Runtime results: NOT_RUN.
+
+## Owner-directed revision v0.2 (DEC-008)
+
+This delta supersedes the affected v0.1 scenarios only. AC-US-002-01 now requires the five ordered stage names, without feature/workflow explanatory copy. AC-US-002-02 remains a source-claim constraint; no execution promises are added. AC-US-003-01/02 now require a real official getting-started link; embedded command/clipboard cases no longer apply. AC-US-005-01 executes within h1; AC-US-005-02 expects static final “nothing” with no caret for reduced/no-JS behavior, plus the separate static NOTTH header. AC-US-004 and US-006 use always-visible Docs/GitHub links, without mobile disclosure controls. All other applicable requirements/gates persist. Actual v0.2 results: ../evidence/minimal/README.md; owner approval still pending.

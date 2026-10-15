@@ -1,5 +1,5 @@
 {
-  "goal": "idea",
+  "goal": "change",
   "schema_version": 1,
-  "task": "NOTTH official website: requirements baseline; owner approval before visual design, implementation and release"
+  "task": "Gate 2 Astro browser prototype authorized; await owner design approval before production completion."
 }

@@ -1,0 +1,13 @@
+{
+  "src/styles/global.css": "ab3264f131e657ea82b1a612d09ab52e1e3197106d4a0bfafd6acbbccbe8ee23",
+  "src/layouts/Base.astro": "1ae92e186ed9e0d2a213580fbdae181dcb0c9f33e3cea9c3060b2780b6216d1e",
+  "src/pages/index.astro": "cb2348d77db3da734e8cec4cb05d9a732972c3a489070cabb7f3007681a2134d",
+  "src/components/Wordmark.astro": "34d2ae536bada1d1225c4fe817bf670d8ab65c23cd411052384fe00df8233406",
+  "src/components/Header.astro": "cacc400a74204fb705756b3674113083ce886335eb97c3ae1488e9cbab560dab",
+  "src/components/BrandMotion.astro": "eff194d0af7f8ad8904ffe0bcf2e9beb7063f8832773c63bb0aa4b2525338a2b",
+  "tests/preview.spec.ts": "c4442548df22e693661b281b953b1dbaa7708c4a3567dfd396093fecb1f5c027",
+  "playwright.config.ts": "e31e81088fc26164c884d9a2279b3bc15d145922be8549a17fc1704ab4cf2876",
+  "docs/design/notth-preview.html": "22b9040950ef1861f2fafce79253177ea3b3ca057ae995fdf70840729acd1bdb",
+  "astro.config.mjs": "6e7f3780f6b4842d24261b53b87b92189cf0a455ae01ee9ec255fd39008b47d7",
+  "package-lock.json": "fa2842a53770cf356ba60ad027735deadbcc2d0dbc3a04d0e1af5a5a030e6f1c"
+}

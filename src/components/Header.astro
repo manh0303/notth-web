@@ -1,0 +1,10 @@
+---
+import Wordmark from './Wordmark.astro';
+---
+<header class="site-header wrap">
+  <a class="home-link" href={import.meta.env.BASE_URL} aria-label="NOTTH home"><Wordmark /></a>
+  <nav aria-label="Main navigation">
+    <a href="https://github.com/manh0303/notth/tree/main/docs">Docs <span aria-hidden="true">↗</span></a>
+    <a href="https://github.com/manh0303/notth">GitHub <span aria-hidden="true">↗</span></a>
+  </nav>
+</header>

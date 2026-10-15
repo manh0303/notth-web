@@ -1,0 +1,25 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> notth-web@0.1.0 test:e2e
+> playwright test
+
+[2m[WebServer] [22m(node:153) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 9 tests using 1 worker
+
+(node:165) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:165) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/preview.spec.ts:6:3 › Minimal homepage and accessibility at 375px (926ms)
+  ✓  2 tests/preview.spec.ts:6:3 › Minimal homepage and accessibility at 768px (871ms)
+  ✓  3 tests/preview.spec.ts:6:3 › Minimal homepage and accessibility at 1440px (754ms)
+  ✓  4 tests/preview.spec.ts:31:1 › Headline motion preserves sequence, 500ms pause and layout (317ms)
+  ✓  5 tests/preview.spec.ts:53:1 › Reduced motion keeps static readable headline (97ms)
+  ✓  6 tests/preview.spec.ts:60:1 › Mobile keyboard navigation stays directly available (170ms)
+  ✓  7 tests/preview.spec.ts:75:1 › No-JS homepage keeps tagline and installation/docs links (133ms)
+  ✓  8 tests/preview.spec.ts:86:1 › 200% equivalent desktop reflow (142ms)
+  ✓  9 tests/preview.spec.ts:93:1 › Portable HTML opens offline and animates the headline (3.1s)
+
+  9 passed (7.7s)

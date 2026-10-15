@@ -19,11 +19,12 @@
       },
       "capability": "product",
       "canonical": true,
-      "status": "draft",
+      "status": "approved",
       "owner": "project-owner",
       "sources": [
         "framework"
-      ]
+      ],
+      "revision": "gate1-main-28845004beed126eb72d4bbbd70c94b2835c39fa"
     },
     "ui": {
       "kind": "design",
@@ -32,6 +33,22 @@
         "connection": "figma"
       },
       "revision": "page-0:1-gate1-pending",
+      "canonical": false,
+      "status": "draft",
+      "write_policy": "write",
+      "owner": "project-owner",
+      "sources": [
+        "framework"
+      ],
+      "depends_on": [
+        "product"
+      ]
+    },
+    "preview": {
+      "kind": "design",
+      "location": {
+        "path": "docs/design"
+      },
       "canonical": true,
       "status": "draft",
       "write_policy": "write",

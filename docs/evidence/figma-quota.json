@@ -1,0 +1,29 @@
+{
+  "observedAt": "2026-10-15 Asia/Bangkok",
+  "operation": "use_figma foundations write",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "You've reached the Figma MCP tool call limit on the Starter plan. Upgrade your plan for more tool calls: https://www.figma.com/files/team/1525445317561853698/all-projects?upgrade=mcp_rate_limit_paywall"
+      },
+      {
+        "type": "resource_link",
+        "uri": "file://figma/docs/rate-limits-access.md",
+        "name": "rate-limits-access.md",
+        "mimeType": "text/plain",
+        "size": 3932,
+        "_meta": {
+          "size": 3932
+        }
+      }
+    ],
+    "structuredContent": {
+      "error_code": "INVALID_ARGUMENT"
+    },
+    "isError": true
+  },
+  "createdNodesConfirmed": 0,
+  "uiFramesConfirmed": 0,
+  "next": "Resolve plan/seat/quota; inspect canvas before retrying. Do not claim design creation."
+}

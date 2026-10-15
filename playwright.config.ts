@@ -1,0 +1,2 @@
+import { defineConfig } from '@playwright/test';
+export default defineConfig({ testDir: './tests', webServer: { command: 'node scripts/serve-build.mjs', url: 'http://127.0.0.1:4173/notth-web/', reuseExistingServer: false }, fullyParallel: false, workers: 1, reporter: [['list'], ['json', { outputFile: 'docs/evidence/minimal/playwright.json' }]], use: { baseURL: process.env.TEST_BASE_URL || 'http://localhost:4173/notth-web/', browserName: 'chromium', trace: 'retain-on-failure' } });

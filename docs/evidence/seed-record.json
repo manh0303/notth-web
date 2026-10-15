@@ -1,7 +1,7 @@
 {
   "status": "ok",
   "path": ".harness/knowledge.json",
-  "knowledge_hash": "d4de9fda7184cecd59d598ceeb846e21efa92b5c951036e4f0b8e76a913530f2",
+  "knowledge_hash": "a17f47818fa9016e25409d0b4cb584a005bcf0062b67f243ba524300c2a764fb",
   "changed": true,
   "note": "Recorded host-reconciled source hashes; this does not certify summary correctness."
 }

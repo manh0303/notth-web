@@ -1,0 +1,26 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import BrandMotion from '../components/BrandMotion.astro';
+const steps = ['Requirements', 'Design', 'Code', 'Test', 'Review'];
+---
+<Base>
+  <Header />
+  <main id="main" class="wrap">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title" aria-label="Nothing unnecessary."><BrandMotion /><span class="headline-end" aria-hidden="true">unnecessary.</span></h1>
+        <p class="hero-description">A clearer workflow for your AI coding tool.</p>
+        <a class="button" href="https://github.com/manh0303/notth/blob/main/docs/getting-started.md">Get started <span aria-hidden="true">↗</span></a>
+      </div>
+      <figure class="setup-preview" aria-label="Setup walkthrough video placeholder. Video coming soon.">
+        <div class="video-space" aria-hidden="true"><svg viewBox="0 0 48 48" width="48" height="48" fill="none"><path d="M19 14.5L34 24 19 33.5V14.5Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" /></svg></div>
+        <figcaption><span>Setup walkthrough</span><span>Coming soon</span></figcaption>
+      </figure>
+    </section>
+    <section class="workflow" id="workflow" aria-label="Software development workflow">
+      <ol class="workflow-steps">{steps.map((step, i) => <li><span class="step-number" aria-hidden="true">0{i + 1}</span><span class="step-name">{step}</span><span class="step-arrow" aria-hidden="true">→</span></li>)}</ol>
+    </section>
+  </main>
+  <footer class="site-footer wrap"><p>NOTTH — Nothing unnecessary.</p><a href="https://github.com/manh0303/notth/blob/main/LICENSE">MIT License ↗</a></footer>
+</Base>
